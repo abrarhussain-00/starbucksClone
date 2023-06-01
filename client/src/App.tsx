@@ -23,7 +23,6 @@ function App() {
         <Route path='/store-locator' element={<StoreLocator/>}/>
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/account/create' element={<CreateAccount/>}/>
-
       </Routes>
     </div>
   );
