@@ -5,7 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'sodo-sans': ['SoDoSans', 'sans-serif'],
+      fontFamily: {
+        main: ['SoDoSans', 'sans-serif'],
+      },
+      backgroundColor: {
+        'main-color': 'rgb(212, 233, 226)',
+        'green-color': '#00754A',
+      },
     },
   },
   plugins: [],

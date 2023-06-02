@@ -1,9 +1,11 @@
 import React from 'react'
-
+import RewardsNav from '../components/RewardsNav'
+import RewardsMain from '../components/RewardsMain'
 const Rewards = () => {
   return (
     <div>
-        <h1>Rewards</h1>
+        <RewardsNav/>
+        <RewardsMain />
     </div>
   )
 }
