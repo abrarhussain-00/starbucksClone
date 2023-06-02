@@ -4,7 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      'sodo-sans': ['SoDoSans', 'sans-serif'],
+    },
   },
   plugins: [],
 }
