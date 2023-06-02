@@ -135,6 +135,8 @@ const Home: React.FC = () => {
           **Fees and taxes still apply. Limit one per customer. Menu limited. See the DoorDash app for availability and restrictions.
         </p>
       </div>
+      <br/>
+      <div style={{borderBottom:'3px solid rgb(224,224,224)'}}></div>
     </div>
   );
 };
