@@ -10,8 +10,10 @@ module.exports = {
       },
       backgroundColor: {
         'main-color': 'rgb(212, 233, 226)',
-        'green-color': '#00754A',
       },
+      colors: {
+        'green-color': '#00754A',
+      }
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Star from '../assets/rewardsImg/star.png'
 const RewardsMain = () => {
     return (
-        <div className='bg-main-color w-full h-screen bg-cover bg-center' style={{ backgroundImage: `url(${Star})` }}>
+        <div className='bg-main-color w-full h-screen bg-cover bg-center sm:bg-bottom' style={{ backgroundImage: `url(${Star})` }}>
             <div className='lg:flex lg:justify-start lg:items-center sm:items-start sm:justify-center sm:m-0 sm:pt-3 h-full lg:ml-20'>
                 <div className='lg:mx-4 lg:flex lg:flex-col lg:items-start sm:items-center sm:justify-center'>
                     <h1 className='text-black font-main text-[36px] lg:font-semibold sm:text-[1.5rem] sm:font-semibold'>FREE COFFEE</h1>
