@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import RewardsNav from '../components/RewardsNav'
 import RewardsMain from '../components/RewardsMain'
+import FavoriteItem from '../components/FavoriteItem';
 const Rewards = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -55,6 +56,7 @@ const Rewards = () => {
           </div>
         </div>
       </div>
+      <FavoriteItem />
     </div>
   )
 }
