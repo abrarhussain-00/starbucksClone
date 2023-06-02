@@ -10,6 +10,7 @@ import Gifts from './views/Gifts';
 import StoreLocator from './views/StoreLocator';
 import Signin from './views/Signin';
 import CreateAccount from './views/CreateAccount';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/account/create' element={<CreateAccount/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
