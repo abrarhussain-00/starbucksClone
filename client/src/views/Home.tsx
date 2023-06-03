@@ -136,7 +136,6 @@ const Home: React.FC = () => {
         </p>
       </div>
       <br/>
-      <div style={{borderBottom:'3px solid rgb(224,224,224)'}}></div>
     </div>
   );
 };
