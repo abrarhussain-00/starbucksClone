@@ -6,22 +6,7 @@ import GettingStarted from '../components/Rewards/GettingStarted'
 import RewardExtras from '../components/Rewards/RewardsExtras'
 import CashorCard from '../components/Rewards/CashorCard'
 const Rewards = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  useEffect(() => {
-    const handleSmallScreens = () => {
-      setIsSmallScreen(window.innerWidth <= 640);
-    };
-    // Checking to the size 
-    handleSmallScreens()
-    // Listen for resize
-    window.addEventListener('resize', handleSmallScreens);
-    return () => {
-      // When component unmounts remove it
-      window.removeEventListener('resize', handleSmallScreens);
-    };
-
-  }, [])
   return (
     <div>
       <RewardsNav />
