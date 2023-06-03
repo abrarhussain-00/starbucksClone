@@ -12,15 +12,21 @@ const CashorCard = () => {
                         <h2 className='font-soDo font-semibold text-[19px] py-10 md:text-[28px] md:py-5'>1 per dollar</h2>
                         <p>Pay as you go</p>
                     </div>
-                    <div className='flex p-[24px]'>
-                        <div className='flex'>
+                    <div className='md:flex  p-[24px] w-full '>
+                        <div className='md:flex'>
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt="scan and pay" width={112} />
                             <div className='text-start'>
-                                <h2>Scan and pay separately</h2>
+                                <h2 className='text-[16px] font-semibold md:text-[19px]'>Scan and pay separately</h2>
                                 <p>Use cash or credit/debit card at the register.</p>
                             </div>
                         </div>
-                        <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="scan and pay" width={112} />
+                        <div className='md:flex'>
+                            <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="scan and pay" width={112} />
+                            <div className='text-start'>
+                                <h2 className='text-[16px] font-semibold md:text-[19px]'>Scan and pay separately</h2>
+                                <p>Use cash or credit/debit card at the register.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
