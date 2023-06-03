@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import RewardsNav from '../components/RewardsNav'
 import RewardsMain from '../components/RewardsMain'
-import FavoriteItem from '../components/FavoriteItem';
+import FavoriteItem from '../components/Rewards/FavoriteItem'
 const Rewards = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
