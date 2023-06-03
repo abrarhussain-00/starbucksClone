@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Star from '../assets/rewardsImg/star.png'
+
+import Star from '../../assets/rewardsImg/star.png'
 const RewardsMain = () => {
     return (
         <div className='bg-main-color w-full h-screen bg-cover bg-center sm:bg-bottom' style={{ backgroundImage: `url(${Star})` }}>
