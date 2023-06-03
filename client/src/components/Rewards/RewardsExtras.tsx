@@ -13,6 +13,7 @@ const RewardExtras = () => {
                         <img src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg" alt="fun foodie" width={112} />
                     </div>
                     <div>
+                        {/* Need to Make pop up for links */}
                         <h3 className='font-main font-semibold pt-2 mt-2 text-[19px]'>Fun freebies</h3>
                         <p className='mt-2'>Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
                         <Link to='#' className='text-green-color border-b border-green-color'>Learn more</Link>
@@ -23,6 +24,7 @@ const RewardExtras = () => {
                         <img src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg" alt="order & pay" width={112} />
                     </div>
                     <div>
+                        {/* Need to Make pop up for links */}
                         <h3 className='font-main font-semibold pt-2 mt-2 text-[19px]'>Order & pay ahead</h3>
                         <p className='mt-2'>Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
                         <Link to='#' className='text-green-color border-b border-green-color'>Learn more</Link>
@@ -33,6 +35,7 @@ const RewardExtras = () => {
                         <img src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg" alt="Get to free faster" width={112} />
                     </div>
                     <div>
+                        {/* Need to Make pop up for links */}
                         <h3 className='font-main font-semibold pt-2 mt-2 text-[19px]'>Get to free faster</h3>
                         <p className='mt-2'>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
                         <Link to="#" className='text-green-color border-b border-green-color'>Learn more</Link>
