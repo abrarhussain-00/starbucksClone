@@ -3,6 +3,7 @@ import RewardsNav from '../components/Rewards/RewardsNav'
 import RewardsMain from '../components/Rewards/RewardsMain'
 import FavoriteItem from '../components/Rewards/FavoriteItem'
 import GettingStarted from '../components/Rewards/GettingStarted'
+import RewardExtras from '../components/Rewards/RewardsExtras'
 const Rewards = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -26,6 +27,7 @@ const Rewards = () => {
       <RewardsMain />
       <GettingStarted />
       <FavoriteItem />
+      <RewardExtras />
     </div>
   )
 }
