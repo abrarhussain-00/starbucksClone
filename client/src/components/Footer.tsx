@@ -2,10 +2,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
+    <div>
+      <div className="border-b-2 border-gray-300"></div>
     <footer className="m-10">
       <div className="flex flex-col md:flex-row justify-between">
         <div className="mb-8 md:mb-0">
-          <h3 className="mb-4 text-lg">About Us</h3>
+          <h3 className="mb-4 text-lg font-bold">About Us</h3>
           <ul>
             <li><a href="#" className="text-black-500">Our Company</a></li>
             <li><a href="#" className="text-black-500">Our Coffee</a></li>
@@ -16,7 +18,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="mb-8 md:mb-0">
-          <h3 className="mb-4 text-lg">Careers</h3>
+          <h3 className="mb-4 text-lg font-bold">Careers</h3>
           <ul>
             <li><a href="#" className="text-black-500">Culture and Values</a></li>
             <li><a href="#" className="text-black-500">Inclusion, Diversity, and Equity</a></li>
@@ -27,7 +29,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="mb-8 md:mb-0">
-          <h3 className="mb-4 text-lg">Social Impact</h3>
+          <h3 className="mb-4 text-lg font-bold">Social Impact</h3>
           <ul>
             <li><a href="#" className="text-black-500">People</a></li>
             <li><a href="#" className="text-black-500">Planet</a></li>
@@ -35,7 +37,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="mb-8 md:mb-0">
-          <h3 className="mb-4 text-lg">For Business Partners</h3>
+          <h3 className="mb-4 text-lg font-bold">For Business Partners</h3>
           <ul>
             <li><a href="#" className="text-black-500">Landlord Support Center</a></li>
             <li><a href="#" className="text-black-500">Suppliers</a></li>
@@ -44,7 +46,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="mb-8 md:mb-0">
-          <h3 className="mb-4 text-lg">Order and Pick Up</h3>
+          <h3 className="mb-4 text-lg font-bold">Order and Pick Up</h3>
           <ul>
             <li><a href="#" className="text-black-500">Order on the app</a></li>
             <li><a href="#" className="text-black-500">Order on the web</a></li>
@@ -82,6 +84,8 @@ const Footer = () => {
         © 2023 Starbucks Coffee Company. All rights reserved.
       </div>
     </footer>
+    </div>
+
   );
 };
 
