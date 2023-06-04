@@ -25,10 +25,7 @@ const RewardFooter = () => {
                             opens in new window and search for locations honoring “Redeem Rewards”.</p>
                         <p className='text-left text-[14px] pt-5'>Deposit and credit card products provided by JPMorgan Chase Bank, N.A. Member FDIC</p>
                         <h4 className='pt-7 text-gray-500 font-semibold text-[16px] font-main'>REDEEMING REWARDS</h4>
-                        <p className='text-left text-[14px] pt-5'>Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.
-
-                        </p>
-
+                        <p className='text-left text-[14px] pt-5'>Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.</p>
                     </div>
                 </div>
             </div>
