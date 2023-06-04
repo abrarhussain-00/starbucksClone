@@ -1,11 +1,20 @@
-import React from 'react'
-import RewardsNav from '../components/RewardsNav'
-import RewardsMain from '../components/RewardsMain'
+import { useEffect, useState } from 'react'
+import RewardsNav from '../components/Rewards/RewardsNav'
+import RewardsMain from '../components/Rewards/RewardsMain'
+import FavoriteItem from '../components/Rewards/FavoriteItem'
+import GettingStarted from '../components/Rewards/GettingStarted'
+import RewardExtras from '../components/Rewards/RewardsExtras'
+import CashorCard from '../components/Rewards/CashorCard'
 const Rewards = () => {
+
   return (
     <div>
-        <RewardsNav/>
-        <RewardsMain />
+      <RewardsNav />
+      <RewardsMain />
+      <GettingStarted />
+      <FavoriteItem />
+      <RewardExtras />
+      <CashorCard />
     </div>
   )
 }
