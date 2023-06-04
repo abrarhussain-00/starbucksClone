@@ -9,7 +9,7 @@ const CashorCard = () => {
                 <p className='font-main'>Those Stars add up to (really delicious) Rewards.</p>
                 <div className='flex flex-col lg:flex-row lg:px-12 border-b-2'>
                     <div className='flex-col text-start md:flex-row -space-y-10 pl-3 sm:w-[20%] sm:flex-wrap lg:-space-y-3 '>
-                        <h2 className='font-soDo font-semibold text-[19px] py-10 xl:text-[28px] lg:py-5'>1<span className='text-[15px]'>★</span> per dollar</h2>
+                        <h2 className='font-soDo font-semibold text-[19px] py-10 xl:text-[22px] lg:py-5'>1<span className='text-[15px]'>★</span> per dollar</h2>
                         <p>Pay as you go</p>
                     </div>
                     <div className='lg:flex p-[24px] md:flex'>
@@ -31,7 +31,7 @@ const CashorCard = () => {
                 </div>
                 <div className='flex flex-col lg:flex-row lg:px-12'>
                     <div className='flex-col text-start md:flex-row -space-y-10 pl-3 sm:w-[20%] sm:flex-wrap lg:-space-y-3 '>
-                        <h2 className='font-soDo font-semibold text-[19px] py-10 xl:text-[28px] lg:py-5'>2 per dollar</h2>
+                        <h2 className='font-soDo font-semibold text-[19px] py-10 xl:text-[22px] lg:py-5'>2 per dollar</h2>
                         <p>Add funds in the app</p>
                     </div>
                     <div className='lg:flex p-[30px] md:flex'>
