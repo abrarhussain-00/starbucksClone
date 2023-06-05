@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import {Routes, Route} from 'react-router-dom';
 import './App.css';
@@ -15,6 +16,20 @@ import MenuPrev from './views/MenuPrev'
 import MenuFavorites from './views/MenuFavorites';
 import MenuFeatured from './views/MenuFeatured'
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/data');
+      setData(response.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
   return (
     <div className="App">
       <Navbar/>
@@ -29,6 +44,7 @@ function App() {
         <Route path='/menu/previous' element={<MenuPrev/>}/>
         <Route path='/menu/featured' element={<MenuFeatured/>}/>
         <Route path='/menu/favorites' element={<MenuFavorites/>}/>
+        <Route path='/data'/>
       </Routes>
       <Footer/>
     </div>
