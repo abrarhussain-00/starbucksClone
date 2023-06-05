@@ -19,7 +19,7 @@ const RewardsNav = () => {
         }
     }, [])
 return (
-    <nav className={`bg-[#1e3932] w-full h-[50px] ${onMove ? 'sticky top-0 z-50' : ''}`}>
+    <nav className={`bg-[#1e3932] w-full h-[50px] ${onMove ? 'sticky top-0 z-30' : ''}`}>
         <div className='flex justify-between items-center w-full h-full'>
             <h6 className='text-uppercase font-bold text-white text-[14px] p-4 text-transform uppercase lg:p-[99px] sm:p-4'>Starbucks® Rewards</h6>
             {/* Need to add a link for button */}
