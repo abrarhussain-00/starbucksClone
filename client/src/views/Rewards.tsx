@@ -5,6 +5,9 @@ import FavoriteItem from '../components/Rewards/FavoriteItem'
 import GettingStarted from '../components/Rewards/GettingStarted'
 import RewardExtras from '../components/Rewards/RewardsExtras'
 import CashorCard from '../components/Rewards/CashorCard'
+import DeltaMiles from '../components/Rewards/DeltaReward/DeltaMiles'
+import Question from '../components/Rewards/Question'
+import RewardFooter from '../components/Rewards/RewardFooter'
 const Rewards = () => {
 
   return (
@@ -15,6 +18,9 @@ const Rewards = () => {
       <FavoriteItem />
       <RewardExtras />
       <CashorCard />
+      <DeltaMiles />
+      <Question />
+      <RewardFooter />
     </div>
   )
 }
