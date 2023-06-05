@@ -37,6 +37,7 @@ const StoreLocator: React.FC = () => {
             lat: latitude,
             lng: longitude,
           };
+          
 
           map.panTo(currentPosition);
 
@@ -88,37 +89,10 @@ const StoreLocator: React.FC = () => {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
       <div style={{ flex: 1 }}>
-        <input
-          type="text"
-          placeholder="Search for Starbucks..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <button onClick={handleSearch}>Search</button>
-        <ul>
-          {searchResults.map((result) => (
-            <li key={result.place_id}>{result.name}</li>
-          ))}
-        </ul>
-      </div>
-      <div style={{ flex: 1 }}>
-        <GoogleMap
-          mapContainerStyle={containerStyle}
-          center={center}
-          zoom={ZOOM_LEVEL}
-          onLoad={handleMapLoad}
-        >
-          {/* Display the search results as markers */}
-          {searchResults.map((result) => (
-            <Marker
-              key={result.place_id}
-              position={{
-                lat: result.geometry?.location?.lat() || 0,
-                lng: result.geometry?.location?.lng() || 0,
-              }}
-            />
-          ))}
-        </GoogleMap>
+        <iframe src="https://storage.googleapis.com/maps-solutions-gnq1sus2xy/locator-plus/ayug/locator-plus.html"
+          width="100%" height="100%"
+          loading="lazy">
+        </iframe>
       </div>
     </div>
   );
