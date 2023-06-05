@@ -37,6 +37,7 @@ const StoreLocator: React.FC = () => {
             lat: latitude,
             lng: longitude,
           };
+          
 
           map.panTo(currentPosition);
 
