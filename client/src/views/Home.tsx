@@ -16,8 +16,8 @@ const Home: React.FC = () => {
         <div className="md:w-1/2 text-white p-4 h-25rem" style={{ backgroundColor: 'rgb(3, 97, 65)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div className="flex h-full justify-center items-center">
             <div>
-              <p className="text-center " style={{ fontSize: '60px', marginBottom: '20px' }}>Find your adventure</p>
-              <p className="text-center" style={{ fontSize: '25px' }}>Starbucks® Summer Game is here! Play for your chance to win—more than 10 million prizes are up for grabs!*</p>
+              <p className="text-center " style={{ fontSize: '30px', marginBottom: '20px' }}>Find your adventure</p>
+              <p className="text-center" style={{ fontSize: '20px' }}>Starbucks® Summer Game is here! Play for your chance to win—more than 10 million prizes are up for grabs!*</p>
               <button style={{ color: 'white', padding: '0.5rem', borderRadius: '10rem', border: '1px solid white', marginTop: '20px' }}>Play now</button>
             </div>
           </div>
@@ -29,8 +29,8 @@ const Home: React.FC = () => {
         <div className="md:w-1/2 text-white p-4 h-25rem" style={{ backgroundColor: 'rgb(3, 97, 65)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div className="flex h-full justify-center items-center">
             <div>
-              <p className="text-center " style={{ fontSize: '60px', marginBottom: '20px' }}>A new blend created by our baristas</p>
-              <p className="text-center" style={{ fontSize: '25px' }}>Introducing Starbucks® Green Apron Blend™, from those who know our coffee best. Enjoy its honeybell orange and graham cracker notes hot or over ice—just like our baristas do.</p>
+              <p className="text-center " style={{ fontSize: '30px', marginBottom: '20px' }}>A new blend created by our baristas</p>
+              <p className="text-center" style={{ fontSize: '20px' }}>Introducing Starbucks® Green Apron Blend™, from those who know our coffee best. Enjoy its honeybell orange and graham cracker notes hot or over ice—just like our baristas do.</p>
               <button style={{ color: 'white', padding: '0.5rem', borderRadius: '10rem', border: '1px solid white', marginTop: '20px' }}>Order now</button>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           <div className="flex h-full justify-center items-center">
             <div>
               <p className="text-center " style={{ fontSize: '30px', marginBottom: '20px' }}>Delivery, from our place to yours</p>
-              <p className="text-center" style={{ fontSize: '22px' }}>Enjoy 20% off Starbucks orders with DoorDash of $15+. Offer valid 6/1-6/14 Monday – Friday, 7 a.m. – 12 p.m. only. Max discount of $5.**</p>
+              <p className="text-center" style={{ fontSize: '20px' }}>Enjoy 20% off Starbucks orders with DoorDash of $15+. Offer valid 6/1-6/14 Monday – Friday, 7 a.m. – 12 p.m. only. Max discount of $5.**</p>
               <button style={{ color: 'white', padding: '0.5rem', borderRadius: '10rem', border: '1px solid white', marginTop: '20px' }}>Order now</button>
             </div>
           </div>
@@ -69,8 +69,8 @@ const Home: React.FC = () => {
         <div className="md:w-1/2 text-white p-4 h-25rem" style={{ backgroundColor: 'rgb(235,128,165)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div className="flex h-full justify-center items-center">
             <div>
-              <p className="text-center " style={{ fontSize: '50px', marginBottom: '20px', color: 'black' }}>Shaken with sunshine</p>
-              <p className="text-center" style={{ fontSize: '22px', color: 'black' }}>Try these bright Starbucks Refreshers® beverages: Mango Dragonfruit Lemonade, Pineapple Passionfruit Lemonade and Strawberry Açaí Lemonade.</p>
+              <p className="text-center " style={{ fontSize: '30px', marginBottom: '20px', color: 'black' }}>Shaken with sunshine</p>
+              <p className="text-center" style={{ fontSize: '20px', color: 'black' }}>Try these bright Starbucks Refreshers® beverages: Mango Dragonfruit Lemonade, Pineapple Passionfruit Lemonade and Strawberry Açaí Lemonade.</p>
               <button style={{ color: 'black', padding: '0.5rem', borderRadius: '10rem', border: '1px solid black', marginTop: '20px' }}>Order now</button>
             </div>
           </div>
@@ -96,8 +96,8 @@ const Home: React.FC = () => {
         <div className="md:w-1/2 text-white p-4 h-25rem" style={{ backgroundColor: 'rgb(212,232,225)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div className="flex h-full justify-center items-center">
             <div>
-              <p className="text-center " style={{ fontSize: '50px', marginBottom: '20px', color: 'black' }}>Gift cards give you more in the app</p>
-              <p className="text-center" style={{ fontSize: '22px', color: 'black' }}>It's easy to starting earning your favorites for free. Just join Starbucks Rewards and load your gift cards in the app.</p>
+              <p className="text-center " style={{ fontSize: '30px', marginBottom: '20px', color: 'black' }}>Gift cards give you more in the app</p>
+              <p className="text-center" style={{ fontSize: '20px', color: 'black' }}>It's easy to starting earning your favorites for free. Just join Starbucks Rewards and load your gift cards in the app.</p>
               <button style={{ color: 'black', padding: '0.5rem', borderRadius: '10rem', border: '1px solid black', marginTop: '20px' }}>Order now</button>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
           <div className="flex h-full justify-center items-center">
             <div>
               <p className="text-center " style={{ fontSize: '30px', marginBottom: '20px', color: 'black' }}>Our bold new collection</p>
-              <p className="text-center" style={{ fontSize: '15px', color: 'black' }}>This collaboration with artist Tim Singleton is rainbow-bright. His work explores queerness and self-expression and seeks to make a brighter, bolder world.</p>
+              <p className="text-center" style={{ fontSize: '20px', color: 'black' }}>This collaboration with artist Tim Singleton is rainbow-bright. His work explores queerness and self-expression and seeks to make a brighter, bolder world.</p>
               <button style={{ color: 'black', padding: '0.5rem', borderRadius: '10rem', border: '1px solid black', marginTop: '20px' }}>Order now</button>
             </div>
           </div>
