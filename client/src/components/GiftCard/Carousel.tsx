@@ -192,6 +192,7 @@ const Carousel = () => {
                     </div>
                 ))}
             </Slider>
+            <br/><br/>
             <GotGiftCard />
             </div>
             <div className='mt-10'>
