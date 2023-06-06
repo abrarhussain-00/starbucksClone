@@ -15,21 +15,8 @@ import Footer from './components/Footer';
 import MenuPrev from './views/MenuPrev'
 import MenuFavorites from './views/MenuFavorites';
 import MenuFeatured from './views/MenuFeatured'
+
 function App() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('http://localhost:3001/data');
-      setData(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
   return (
     <div className="App">
       <Navbar/>
