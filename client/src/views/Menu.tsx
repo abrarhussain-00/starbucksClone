@@ -1,10 +1,18 @@
 import React from 'react'
-import MenuNav from '../components/MenuNav'
+import MenuNav from '../components/Menu/MenuNav'
+import MenuSideNav from '../components/Menu/MenuSideNav'
+import MenuItems from '../components/Menu/MenuItems'
+
 const Menu = () => {
   return (
     <div>
       <MenuNav />
-        <h1>Menu</h1>
+      <br /><br />
+      <div className="flex">
+        <MenuSideNav />
+        <MenuItems />
+      </div>
+      <br />
     </div>
   )
 }
