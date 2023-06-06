@@ -123,8 +123,9 @@ const Carousel = () => {
         image: ThisonMe,
         alt: "Birthday",
     },
-]
-const workplace = [{
+    ]
+
+    const workplace = [{
     image: Mytreat,
     alt: "thank you",
 },
@@ -144,7 +145,7 @@ const workplace = [{
     image: ThisonMe,
     alt: "Birthday",
 },
-]
+    ]
 
     return (
         <div>
