@@ -1,14 +1,12 @@
 import React from "react";
 import Carousel from "../components/GiftCard/Carousel";
-import FartherDay from "../components/GiftCard/FartherDay";
-
+import GiftCardFooter from "../components/GiftCard/GiftCardFooter";
 
 const Gifts: React.FC = () => {
   return (
     <div>
-      <h1>Gifts</h1>
       <Carousel />
-      <FartherDay />
+      <GiftCardFooter />
     </div>
   );
 };
