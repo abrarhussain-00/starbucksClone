@@ -15,7 +15,16 @@ import BirthdayFive from '../../assets/BirthdayCards/birthday5.png'
 import Mytreat from '../../assets/ThankyouCards/mytreat.png'
 import ThankGoodness from '../../assets/ThankyouCards/ThankGooddness.webp'
 import ThisonMe from '../../assets/ThankyouCards/ThisOnMe.webp'
-import GotGiftCard from './GotGiftCard';
+import Greatwork from '../../assets/Workplace/Greatwork.png'
+import GreatworkTwo from '../../assets/Workplace/Greatwork2.png'
+import GreatworkThree from '../../assets/Workplace/Greatwork3.png'
+import GreatworkFour from '../../assets/Workplace/Greatworkfour.png'
+import GreatworkFive from '../../assets/Workplace/Greatwork5.png'
+import Affection from '../../assets/Affection/Affection.png'
+import AffectionTwo from '../../assets/Affection/affection2.avif'
+import AffectionThree from '../../assets/Affection/affection3.webp'
+import AffectionFour from '../../assets/Affection/affection4.avif'
+import AffectionFive from '../../assets/Affection/affection5.png'
 
 const Carousel = () => {
 
@@ -23,7 +32,7 @@ const Carousel = () => {
         dots: true,
         centerMode: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         speed: 500,
         responsive: [
             {
@@ -124,31 +133,58 @@ const Carousel = () => {
         image: ThisonMe,
         alt: "Birthday",
     },
-]
-const workplace = [{
-    image: Mytreat,
-    alt: "thank you",
-},
-{
-    image: thankYou,
-    alt: "thank you",
-},
-{
-    image: thankYouTwo,
-    alt: "Birthday",
-},
-{
-    image: ThankGoodness,
-    alt: "Birthday",
-},
-{
-    image: ThisonMe,
-    alt: "Birthday",
-},
-]
+    ]
 
+    const workplace = [{
+        image: Greatwork,
+        alt: "Great work",
+    },
+    {
+        image: GreatworkTwo,
+        alt: "Great work",
+    },
+    {
+        image: GreatworkThree,
+        alt: "Great work",
+    },
+    {
+        image: GreatworkFour,
+        alt: "Great work",
+    },
+    {
+        image: GreatworkFive,
+        alt: "Great work",
+    },
+    ]
+
+    const affection = [
+        {
+            image: Affection,
+            alt: "Affection",
+        },
+        {
+            image: AffectionTwo,
+            alt: "Affection",
+        },
+        {
+            image: AffectionThree,
+            alt: "Affection",
+        },
+        {
+            image: AffectionFour,
+            alt: "Affection",
+        },
+        {
+            image: AffectionFive,
+            alt: "Affection",
+        },
+    ]
     return (
         <div>
+            <div className='mt-10'>
+                <div className='text-start px-5 md:px-14'>
+                    <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Featured</h1>
+                </div>
             <Slider {...settings}>
                 {featuredGiftCards.map((card, index) => (
                     <div key={index} className='flex justify-center items-center'>
@@ -156,24 +192,55 @@ const workplace = [{
                     </div>
                 ))}
             </Slider>
-            <br />
-            <GotGiftCard/>
-            <br/>
-            <Slider {...settings}>
-                {birthday.map((card, index) => (
-                    <div key={index} className='flex justify-center items-center'>
-                        <img src={card.image} alt={card.alt} width={290} style={{ borderRadius: '8px' }} />
-                    </div>
-                ))}
-            </Slider>
-            <br />
-            <Slider {...settings}>
-                {thankYouCards.map((card, index) => (
-                    <div key={index} className='flex justify-center items-center'>
-                        <img src={card.image} alt={card.alt} width={290} style={{ borderRadius: '8px' }} />
-                    </div>
-                ))}
-            </Slider>
+            </div>
+            <div className='mt-10'>
+                <div className='text-start px-5 md:px-14'>
+                    <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Birthday</h1>
+                </div>
+                <Slider {...settings}>
+                    {birthday.map((card, index) => (
+                        <div key={index} className='flex justify-center items-center'>
+                            <img src={card.image} alt={card.alt} width={290} style={{ borderRadius: '8px' }} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+            <div className='mt-10'>
+                <div className='text-start px-5 md:px-14'>
+                    <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Thank You</h1>
+                </div>
+                <Slider {...settings}>
+                    {thankYouCards.map((card, index) => (
+                        <div key={index} className='flex justify-center items-center'>
+                            <img src={card.image} alt={card.alt} width={290} style={{ borderRadius: '8px' }} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+            <div className='mt-10'>
+                <div className='text-start px-5 md:px-14'>
+                    <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Affection</h1>
+                </div>
+                <Slider {...settings}>
+                    {affection.map((card, index) => (
+                        <div key={index} className='flex justify-center items-center'>
+                            <img src={card.image} alt={card.alt} width={290} style={{ borderRadius: '8px' }} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+            <div className='mt-10'>
+                <div className='text-start px-5 md:px-14'>
+                    <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Great Work</h1>
+                </div>
+                <Slider {...settings}>
+                    {workplace.map((card, index) => (
+                        <div key={index} className='flex justify-center items-center'>
+                            <img src={card.image} alt={card.alt} width={290} style={{ borderRadius: '8px' }} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
         </div>
 
 
