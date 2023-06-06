@@ -25,7 +25,7 @@ import AffectionTwo from '../../assets/Affection/affection2.avif'
 import AffectionThree from '../../assets/Affection/affection3.webp'
 import AffectionFour from '../../assets/Affection/affection4.avif'
 import AffectionFive from '../../assets/Affection/affection5.png'
-
+import GotGiftCard from './GotGiftCard';
 const Carousel = () => {
 
     const settings = {
@@ -192,6 +192,7 @@ const Carousel = () => {
                     </div>
                 ))}
             </Slider>
+            <GotGiftCard />
             </div>
             <div className='mt-10'>
                 <div className='text-start px-5 md:px-14'>
