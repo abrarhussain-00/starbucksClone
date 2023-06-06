@@ -15,6 +15,7 @@ import BirthdayFive from '../../assets/BirthdayCards/birthday5.png'
 import Mytreat from '../../assets/ThankyouCards/mytreat.png'
 import ThankGoodness from '../../assets/ThankyouCards/ThankGooddness.webp'
 import ThisonMe from '../../assets/ThankyouCards/ThisOnMe.webp'
+import GotGiftCard from './GotGiftCard';
 
 const Carousel = () => {
 
@@ -156,6 +157,8 @@ const workplace = [{
                 ))}
             </Slider>
             <br />
+            <GotGiftCard/>
+            <br/>
             <Slider {...settings}>
                 {birthday.map((card, index) => (
                     <div key={index} className='flex justify-center items-center'>
