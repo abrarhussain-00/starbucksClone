@@ -179,34 +179,8 @@ const Carousel = () => {
             alt: "Affection",
         },
     ]
-    const affection = [
-        {
-            image: Affection,
-            alt: "Affection",
-        },
-        {
-            image: AffectionTwo,
-            alt: "Affection",
-        },
-        {
-            image: AffectionThree,
-            alt: "Affection",
-        },
-        {
-            image: AffectionFour,
-            alt: "Affection",
-        },
-        {
-            image: AffectionFive,
-            alt: "Affection",
-        },
-    ]
     return (
         <div>
-            <div className='mt-10'>
-                <div className='text-start px-5 md:px-14'>
-                    <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Featured</h1>
-                </div>
             <div className='mt-10'>
                 <div className='text-start px-5 md:px-14'>
                     <h1 className='font-semibold text-[20px] md:text-[22px] py-3'>Featured</h1>
@@ -268,8 +242,6 @@ const Carousel = () => {
                 </Slider>
             </div>
         </div>
-
-
     );
 };
 
