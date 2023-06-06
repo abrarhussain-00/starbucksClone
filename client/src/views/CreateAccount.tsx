@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import axios from 'axios';
 
 const CreateAccount: React.FC = () => {
-  const [firstname, setFirstname] = useState('');
-  const [lastname, setLastname] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -11,11 +12,11 @@ const CreateAccount: React.FC = () => {
   const [terms, setTerms] = useState(false);
 
   const handleFirstnameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFirstname(event.target.value);
+    setFirstName(event.target.value);
   };
 
   const handleLastnameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setLastname(event.target.value);
+    setLastName(event.target.value);
   };
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,11 +37,22 @@ const CreateAccount: React.FC = () => {
 
   const handleTermsChange = () => {
     setTerms(!terms);
-  }
+  };
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    // TODO: Handle form submission
+
+    try {
+      const response = await axios.post('http://localhost:8000/api/login/users', {
+        firstName,
+        lastName,
+        email,
+        password,
+      });
+      console.log(response.data); // Handle the successful response accordingly
+    } catch (error: any) {
+      console.log('This is your error here--->',(error as any).response?.data?.error); // Handle the error response accordingly
+    }
   };
 
   return (
@@ -71,7 +83,7 @@ const CreateAccount: React.FC = () => {
                 type="text"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="*First name"
-                value={firstname}
+                value={firstName}
                 onChange={handleFirstnameChange}
                 required
               />
@@ -81,7 +93,7 @@ const CreateAccount: React.FC = () => {
                 type="text"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="*Last name"
-                value={lastname}
+                value={lastName}
                 onChange={handleLastnameChange}
                 required
               />
