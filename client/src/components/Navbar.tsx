@@ -146,14 +146,14 @@ const Navbar: React.FC = () => {
                         {showDropdown && (
                           <div className="absolute right-0 mt-2 bg-white shadow-lg rounded py-2 w-40">
                             {/* Add dropdown content options */}
+                            <Link to="/home" className="block px-4 py-2 text-black hover:bg-gray-200">
+                              Home
+                            </Link>
                             <Link to="/account/personal" className="block px-4 py-2 text-black hover:bg-gray-200">
                               Personal Information
                             </Link>
                             <Link to="/account/settings/privacy" className="block px-4 py-2 text-black hover:bg-gray-200">
                               Privacy
-                            </Link>
-                            <Link to="/account/settings" className="block px-4 py-2 text-black hover:bg-gray-200">
-                              Settings
                             </Link>
                             <br />
                             <hr />
