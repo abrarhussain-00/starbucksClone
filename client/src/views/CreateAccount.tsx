@@ -61,8 +61,8 @@ const CreateAccount: React.FC = () => {
         localStorage.setItem('firstName', JSON.stringify(res.data.firstName));
         localStorage.setItem('lastName', JSON.stringify(res.data.lastName));
         setUserLoggedIn(true); // Set the login status
-        navigate(`/welcome`);
-        window.location.assign("/welcome");
+        navigate(`/home`);
+        window.location.assign("/home");
       })
       .catch((err) => console.error(err));
   };
