@@ -14,7 +14,8 @@ import CreateAccount from './views/CreateAccount';
 import Footer from './components/Footer';
 import MenuPrev from './views/MenuPrev'
 import MenuFavorites from './views/MenuFavorites';
-import MenuFeatured from './views/MenuFeatured'
+import MenuFeatured from './views/MenuFeatured';
+import Success from './views/Success';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         <Route path='/menu/previous' element={<MenuPrev/>}/>
         <Route path='/menu/featured' element={<MenuFeatured/>}/>
         <Route path='/menu/favorites' element={<MenuFavorites/>}/>
-        <Route path='/data'/>
+        <Route path='/welcome' element={<Success/>}/>
       </Routes>
       <Footer/>
     </div>

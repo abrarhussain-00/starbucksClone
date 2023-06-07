@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { ImLocation } from 'react-icons/im'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
+
 
   const [open, setOpen] = useState(false);
 
@@ -13,8 +15,28 @@ const Navbar: React.FC = () => {
   };
 
   const handleClosedRoutes = () => {
-    setOpen(false)
+    setOpen(false);
   }
+
+  const [firstName, setFirstName] = useState('');
+
+  useEffect(() => {
+    const storedFirstName = localStorage.getItem('firstName');
+    if (storedFirstName) {
+      setFirstName(JSON.parse(storedFirstName));
+    }
+  }, []);
+  const handleLogout = () => {
+    localStorage.removeItem("userId");
+    localStorage.removeItem("firstName");
+    navigate("/");
+    window.location.assign("/");
+  };
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleToggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
 
   return (
     <>
@@ -44,7 +66,9 @@ const Navbar: React.FC = () => {
           <div className='flex items-center mr-[2rem]' >
             <Link to="/store-locator" style={{ color: 'black' }}>Find Store</Link>
           </div>
-          <ul style={{ display: 'flex', gap: '1rem' }}>
+
+
+          {/* <ul style={{ display: 'flex', gap: '1rem' }}>
             <li>
               <Link to="/signin" className='text-black flex items-center'>
                 <button className="text-black p-[0.5rem] mr-[2rem]" style={{ borderRadius: '10rem', border: '1px solid black' }}>Sign In</button>
@@ -55,7 +79,53 @@ const Navbar: React.FC = () => {
                 <button className="text-white bg-black p-[0.5rem] mr-[2rem]" style={{ borderRadius: '10rem', border: 'none', marginRight: '2rem' }}>Join Now</button>
               </Link>
             </li>
+          </ul> */}
+          <ul style={{ display: 'flex', gap: '1rem' }}>
+            {firstName ? (
+              <li>
+                <div className="relative">
+                  <button className="text-black p-[0.5rem] mr-[2rem]" onClick={handleToggleDropdown}>
+                    Account
+                  </button>
+                  {/* Add dropdown content here */}
+                  {showDropdown && (
+                    <div className="absolute right-0 mt-2 bg-white shadow-lg rounded py-2 w-40">
+                      {/* Add dropdown content options */}
+                      <Link to="/account/personal" className="block px-4 py-2 text-black hover:bg-gray-200">
+                        Personal Information
+                      </Link>
+                      <Link to="/account/settings/privacy" className="block px-4 py-2 text-black hover:bg-gray-200">
+                        Privacy
+                      </Link>
+                      <Link to="/account/settings" className="block px-4 py-2 text-black hover:bg-gray-200">
+                        Settings
+                      </Link>
+                      <br />
+                      <hr />
+                      <Link to="/" onClick={handleLogout} className="block px-4 py-2 text-black hover:bg-gray-200">
+                        Logout
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </li>
+            ) : (
+              <React.Fragment>
+                <li>
+                  <Link to="/signin" className="text-black flex items-center">
+                    <button className="text-black p-[0.5rem] mr-[2rem]">Sign In</button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/account/create" className="text-black flex items-center">
+                    <button className="text-white bg-black p-[0.5rem] mr-[2rem]">Join Now</button>
+                  </Link>
+                </li>
+              </React.Fragment>
+            )}
           </ul>
+
+
         </div>
         <div onClick={handleOpen} >
           {!open ? <AiOutlineMenu size={30} className='cursor-pointer lg:hidden' /> : <AiOutlineClose size={30} className='cursor-pointer lg:hidden' />}
@@ -81,10 +151,54 @@ const Navbar: React.FC = () => {
                 <li className='mb-5'>
                   <Link to="/giftcard" className='font-600 text-main text-[1.5rem]'>Gift Cards</Link>
                 </li>
+                <ul style={{ display: 'flex', gap: '1rem' }}>
+                  {firstName ? (
+                    <li>
+                      <div className="relative">
+                        <button className="text-black font-600 text-main text-[1.5rem]" onClick={handleToggleDropdown}>
+                          Account
+                        </button>
+                        {/* Add dropdown content here */}
+                        {showDropdown && (
+                          <div className="absolute right-0 mt-2 bg-white shadow-lg rounded py-2 w-40">
+                            {/* Add dropdown content options */}
+                            <Link to="/account/personal" className="block px-4 py-2 text-black hover:bg-gray-200">
+                              Personal Information
+                            </Link>
+                            <Link to="/account/settings/privacy" className="block px-4 py-2 text-black hover:bg-gray-200">
+                              Privacy
+                            </Link>
+                            <Link to="/account/settings" className="block px-4 py-2 text-black hover:bg-gray-200">
+                              Settings
+                            </Link>
+                            <br />
+                            <hr />
+                            <Link to="/" onClick={handleLogout} className="block px-4 py-2 text-black hover:bg-gray-200">
+                              Logout
+                            </Link>
+                          </div>
+                        )}
+                      </div>
+                    </li>
+                  ) : (
+                    <React.Fragment>
+                      <li>
+                        <Link to="/signin" className="text-black flex items-center">
+                          <button className="text-black p-[0.5rem] mr-[2rem]">Sign In</button>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/account/create" className="text-black flex items-center">
+                          <button className="text-white bg-black p-[0.5rem] mr-[2rem]">Join Now</button>
+                        </Link>
+                      </li>
+                    </React.Fragment>
+                  )}
+                </ul>
               </ul>
             </div>
             <hr />
-            <div className='flex justify-start px-12 py-10 space-x-10'>
+            {/* <div className='flex justify-start px-12 py-10 space-x-10' >
               <Link to="/signin" className='text-black flex items-center'>
                 <button className="text-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: '1px solid black' }}>Sign In</button>
               </Link>
@@ -92,10 +206,10 @@ const Navbar: React.FC = () => {
               <Link to="/account/create" className='text-black flex items-center'>
                 <button className="text-white bg-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: 'none', marginRight: '2rem' }}>Join Now</button>
               </Link>
-            </div>
+            </div> */}
             <div className="flex justify-start px-12">
               <Link to="/store-locator" className="font-semibold flex items-center">
-                <ImLocation className="mr-2" size={20}/>
+                <ImLocation className="mr-2" size={20} />
                 Find Store
               </Link>
             </div>
