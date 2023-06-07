@@ -9,7 +9,6 @@ const HomeLogin = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
-
     const userData = () => {
         axios
             .post("http://localhost:8000/api/login/users", {
@@ -56,7 +55,6 @@ const HomeLogin = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 export default HomeLogin
