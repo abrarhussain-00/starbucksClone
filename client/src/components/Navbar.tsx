@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion"
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
-
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -66,20 +65,6 @@ const Navbar: React.FC = () => {
           <div className='flex items-center mr-[2rem]' >
             <Link to="/store-locator" style={{ color: 'black' }}>Find Store</Link>
           </div>
-
-
-          {/* <ul style={{ display: 'flex', gap: '1rem' }}>
-            <li>
-              <Link to="/signin" className='text-black flex items-center'>
-                <button className="text-black p-[0.5rem] mr-[2rem]" style={{ borderRadius: '10rem', border: '1px solid black' }}>Sign In</button>
-              </Link>
-            </li>
-            <li>
-              <Link to="/account/create" className='text-black flex items-center'>
-                <button className="text-white bg-black p-[0.5rem] mr-[2rem]" style={{ borderRadius: '10rem', border: 'none', marginRight: '2rem' }}>Join Now</button>
-              </Link>
-            </li>
-          </ul> */}
           <ul style={{ display: 'flex', gap: '1rem' }}>
             {firstName ? (
               <li>
@@ -91,14 +76,14 @@ const Navbar: React.FC = () => {
                   {showDropdown && (
                     <div className="absolute right-0 mt-2 bg-white shadow-lg rounded py-2 w-40">
                       {/* Add dropdown content options */}
+                      <Link to="/account/home" className="block px-4 py-2 text-black hover:bg-gray-200">
+                        Home
+                      </Link>
                       <Link to="/account/personal" className="block px-4 py-2 text-black hover:bg-gray-200">
                         Personal Information
                       </Link>
                       <Link to="/account/settings/privacy" className="block px-4 py-2 text-black hover:bg-gray-200">
                         Privacy
-                      </Link>
-                      <Link to="/account/settings" className="block px-4 py-2 text-black hover:bg-gray-200">
-                        Settings
                       </Link>
                       <br />
                       <hr />
@@ -124,9 +109,8 @@ const Navbar: React.FC = () => {
               </React.Fragment>
             )}
           </ul>
-
-
         </div>
+
         <div onClick={handleOpen} >
           {!open ? <AiOutlineMenu size={30} className='cursor-pointer lg:hidden' /> : <AiOutlineClose size={30} className='cursor-pointer lg:hidden' />}
         </div>
@@ -198,27 +182,16 @@ const Navbar: React.FC = () => {
               </ul>
             </div>
             <hr />
-            {/* <div className='flex justify-start px-12 py-10 space-x-10' >
-              <Link to="/signin" className='text-black flex items-center'>
-                <button className="text-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: '1px solid black' }}>Sign In</button>
-              </Link>
-
-              <Link to="/account/create" className='text-black flex items-center'>
-                <button className="text-white bg-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: 'none', marginRight: '2rem' }}>Join Now</button>
-              </Link>
-            </div> */}
             <div className="flex justify-start px-12">
               <Link to="/store-locator" className="font-semibold flex items-center">
                 <ImLocation className="mr-2" size={20} />
                 Find Store
               </Link>
             </div>
-
           </motion.div>
         )}
       </AnimatePresence>
     </>
-
   );
 };
 
