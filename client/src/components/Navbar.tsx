@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
               <li>
                 <div className="relative">
                   <button className="text-black p-[0.5rem] mr-[2rem]" onClick={handleToggleDropdown}>
-                    Account
+                    Account &#9660;
                   </button>
                   {/* Add dropdown content here */}
                   {showDropdown && (
@@ -112,13 +112,13 @@ const Navbar: React.FC = () => {
             ) : (
               <React.Fragment>
                 <li>
-                  <Link to="/signin" className="text-black flex items-center">
-                    <button className="text-black p-[0.5rem] mr-[2rem]">Sign In</button>
+                  <Link to="/signin" className='text-black flex items-center'>
+                    <button className="text-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: '1px solid black' }}>Sign In</button>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/account/create" className="text-black flex items-center">
-                    <button className="text-white bg-black p-[0.5rem] mr-[2rem]">Join Now</button>
+                  <Link to="/account/create" className='text-black flex items-center'>
+                    <button className="text-white bg-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: 'none', marginRight: '2rem' }}>Join Now</button>
                   </Link>
                 </li>
               </React.Fragment>
@@ -156,7 +156,7 @@ const Navbar: React.FC = () => {
                     <li>
                       <div className="relative">
                         <button className="text-black font-600 text-main text-[1.5rem]" onClick={handleToggleDropdown}>
-                          Account
+                          Account &#9660;
                         </button>
                         {/* Add dropdown content here */}
                         {showDropdown && (
@@ -183,13 +183,13 @@ const Navbar: React.FC = () => {
                   ) : (
                     <React.Fragment>
                       <li>
-                        <Link to="/signin" className="text-black flex items-center">
-                          <button className="text-black p-[0.5rem] mr-[2rem]">Sign In</button>
+                        <Link to="/signin" className='text-black flex items-center'>
+                          <button className="text-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: '1px solid black' }}>Sign In</button>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/account/create" className="text-black flex items-center">
-                          <button className="text-white bg-black p-[0.5rem] mr-[2rem]">Join Now</button>
+                        <Link to="/account/create" className='text-black flex items-center'>
+                          <button className="text-white bg-black px-[1rem] py-1" style={{ borderRadius: '10rem', border: 'none', marginRight: '2rem' }}>Join Now</button>
                         </Link>
                       </li>
                     </React.Fragment>
