@@ -5,7 +5,6 @@ import { ImLocation } from 'react-icons/im'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
 const Navbar: React.FC = () => {
-
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
