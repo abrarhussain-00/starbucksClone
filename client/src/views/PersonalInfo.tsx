@@ -49,7 +49,7 @@ const PersonalInfo = () => {
 
     const postRegistrationDetails = () => {
         axios
-            .post("http://localhost:8000/api/login/users", {
+            .put("http://localhost:8000/api/login/users", {
                 firstName,
                 lastName,
                 email,
