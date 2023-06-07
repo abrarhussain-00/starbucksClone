@@ -18,6 +18,7 @@ import MenuFeatured from './views/MenuFeatured';
 import Success from './views/Success';
 import SettingsPrivacy from './views/SettingsPrivacy';
 import HomeLogin from './views/HomeLogin'
+import PersonalInfo from './views/PersonalInfo';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path='/welcome' element={<Success/>}/>
         <Route path='/account/settings/privacy' element={<SettingsPrivacy/>}/>
         <Route path='/home' element={<HomeLogin/>} />
+        <Route path='/account/personal' element={<PersonalInfo />} />
       </Routes>
       <Footer/>
     </div>
