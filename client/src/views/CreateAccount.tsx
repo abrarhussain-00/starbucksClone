@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const CreateAccount: React.FC = () => {
   const [firstName, setFirstName] = useState('');
@@ -10,6 +11,8 @@ const CreateAccount: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [emailUpdate, setEmailUpdate] = useState(true);
   const [terms, setTerms] = useState(false);
+  const [userLoggedIn, setUserLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
   const handleFirstnameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFirstName(event.target.value);
@@ -39,20 +42,40 @@ const CreateAccount: React.FC = () => {
     setTerms(!terms);
   };
 
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
+  useEffect(() => {
+    const userId = localStorage.getItem('userId');
+    setUserLoggedIn(userId ? true : false);
+  }, []);
+  
 
-    try {
-      const response = await axios.post('http://localhost:8000/api/login/users', {
+  const postRegistrationDetails = () => {
+    axios
+      .post("http://localhost:8000/api/login/users", {
         firstName,
         lastName,
         email,
         password,
-      });
-      console.log(response.data); // Handle the successful response accordingly
-    } catch (error: any) {
-      console.log('This is your error here--->',(error as any).response?.data?.error); // Handle the error response accordingly
-    }
+      })
+      .then((res) => {
+        localStorage.setItem('userId', JSON.stringify(res.data.id));
+        localStorage.setItem('firstName', JSON.stringify(res.data.firstName));
+        localStorage.setItem('lastName', JSON.stringify(res.data.lastName));
+        setUserLoggedIn(true); // Set the login status
+        navigate(`/welcome`);
+        window.location.assign("/welcome");
+      })
+      .catch((err) => console.error(err));
+  };
+  
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    postRegistrationDetails();
+    console.log({ firstName, lastName, email, password });
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPassword("");
   };
 
   return (

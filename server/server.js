@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json(), express.urlencoded({extended: true}));
 
 require("./routes/joinnow.routes")(app)
-// require("./routes/signin.routes")(app)
+require("./routes/signin.routes")(app)
 
 
 app.listen(port, () => 
