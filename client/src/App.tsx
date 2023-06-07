@@ -17,6 +17,7 @@ import MenuFavorites from './views/MenuFavorites';
 import MenuFeatured from './views/MenuFeatured';
 import Success from './views/Success';
 import SettingsPrivacy from './views/SettingsPrivacy';
+import HomeLogin from './views/HomeLogin'
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
         <Route path='/menu/favorites' element={<MenuFavorites/>}/>
         <Route path='/welcome' element={<Success/>}/>
         <Route path='/account/settings/privacy' element={<SettingsPrivacy/>}/>
-
+        <Route path='/home' element={<HomeLogin/>} />
       </Routes>
       <Footer/>
     </div>
