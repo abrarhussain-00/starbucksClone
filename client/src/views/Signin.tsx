@@ -26,35 +26,30 @@ const SignIn: React.FC = () => {
     event.preventDefault();
     setError(''); // Clear any previous error messages
 
-    // Check if the email field is empty
+    // Validations: Email and Password
     if (!username.trim()) {
       setError('Please enter your email address');
       return;
     }
-
-    // Check if the password field is empty
     if (!password.trim()) {
       setError('Please enter your password');
       return;
     }
-
-    // Call the asynchronous function for sign-in
     signIn();
   };
 
   const signIn = async () => {
     try {
-      // Send a request to the server to verify the username and password
+      // verify the username and password
       const response = await axios.post('http://localhost:8000/api/login', {
         email: username,
         password: password,
       });
 
-      // Check if the sign-in was successful
+      // Successful Login:
       if (response.status === 200) {
-        // TODO: Handle successful sign-in, such as storing user data in local storage
         console.log(response.data);
-        navigate('/welcome'); // Redirect to the welcome page
+        navigate('/welcome'); 
       } else {
         setError('Invalid username or password');
       }
