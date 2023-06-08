@@ -7,6 +7,7 @@ const CreateAccount: React.FC = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [emailUpdate, setEmailUpdate] = useState(true);
@@ -24,6 +25,10 @@ const CreateAccount: React.FC = () => {
 
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
+  };
+
+  const handlePhonenumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPhoneNumber(event.target.value);
   };
 
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -46,7 +51,7 @@ const CreateAccount: React.FC = () => {
     const userId = localStorage.getItem('userId');
     setUserLoggedIn(userId ? true : false);
   }, []);
-  
+
 
   const postRegistrationDetails = () => {
     axios
@@ -54,27 +59,32 @@ const CreateAccount: React.FC = () => {
         firstName,
         lastName,
         email,
+        phoneNumber,
         password,
       })
       .then((res) => {
         localStorage.setItem('userId', JSON.stringify(res.data.id));
         localStorage.setItem('firstName', JSON.stringify(res.data.firstName));
         localStorage.setItem('lastName', JSON.stringify(res.data.lastName));
+        localStorage.setItem('email', JSON.stringify(res.data.email));
+        localStorage.setItem('phoneNumber', JSON.stringify(res.data.phoneNumber));
+
         setUserLoggedIn(true); // Set the login status
         navigate(`/home`);
         window.location.assign("/home");
       })
       .catch((err) => console.error(err));
   };
-  
+
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     postRegistrationDetails();
-    console.log({ firstName, lastName, email, password });
+    console.log({ firstName, lastName, email, phoneNumber, password });
     setFirstName("");
     setLastName("");
     setEmail("");
+    setPhoneNumber("");
     setPassword("");
   };
 
@@ -119,6 +129,15 @@ const CreateAccount: React.FC = () => {
                 value={lastName}
                 onChange={handleLastnameChange}
                 required
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="number"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Phone Number is optional"
+                value={phoneNumber}
+                onChange={handlePhonenumberChange}
               />
             </div>
             <p style={{ fontSize: '20px', fontWeight: 'bold', textAlign: 'left', marginBottom: '1rem' }}>
@@ -199,6 +218,7 @@ const CreateAccount: React.FC = () => {
                 checked={terms}
                 onChange={handleTermsChange}
                 className="form-checkbox h-5 w-5 text-green-800"
+                required
               />
             </label>
             <span className="text-gray-700" style={{ textAlign: 'left' }}>
