@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const SignIn: React.FC = () => {
   const [username, setUsername] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -22,10 +23,37 @@ const SignIn: React.FC = () => {
     setShowPassword(!showPassword);
   };
 
+  const signIn = async (): Promise<void> => {
+    try {
+      // Verify the username and password
+      const response = await axios.post('http://localhost:8000/api/signin/user', {
+        email: username,
+        password: password,
+      });
+  
+      // Successful Login:
+      if (response.status === 200) {
+        // Store username and password in local storage
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+        navigate('/home');
+        console.log(localStorage)
+      } else {
+        setError('Invalid username or password');
+      }
+    } catch (error: any) {
+      if (error.response && error.response.status === 401) {
+        setError('Invalid username or password');
+      } else {
+        setError('An error occurred. Please try again later.');
+      }
+    }
+  };
+  
+  
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     setError(''); // Clear any previous error messages
-
     // Validations: Email and Password
     if (!username.trim()) {
       setError('Please enter your email address');
@@ -38,29 +66,6 @@ const SignIn: React.FC = () => {
     signIn();
   };
 
-  const signIn = async () => {
-    try {
-      // verify the username and password
-      const response = await axios.post('http://localhost:8000/api/login', {
-        email: username,
-        password: password,
-      });
-
-      // Successful Login:
-      if (response.status === 200) {
-        console.log(response.data);
-        navigate('/welcome'); 
-      } else {
-        setError('Invalid username or password');
-      }
-    } catch (error: any) {
-      if (error.response && error.response.status === 401) {
-        setError('Invalid username or password');
-      } else {
-        setError('An error occurred. Please try again later.');
-      }
-    }
-  };
 
   return (
     <div>
