@@ -40,7 +40,7 @@ module.exports.deleteOne = (req, res) => {
 }
 
 module.exports.updateOne = (req, res) => {
-    User.findOneAndUpdate({ _id: req.params.id }, req.body, {new: true , runValidators: true})
+    User.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true, runValidators: true })
         .then(updatedUser => {
             return res.json(updatedUser)
         })
@@ -48,3 +48,17 @@ module.exports.updateOne = (req, res) => {
             return res.status(400).json(err)
         })
 }
+
+module.exports.signIn = (req, res) => {
+    const { email, password } = req.body;
+    User.findOne({ email })
+    .then(user => {
+        if (!user || user.password !== password) {
+            return res.status(401).json({ message: 'Invalid email or password' });
+            }
+            return res.json(user);
+        })
+        .catch(err => {
+            return res.status(500).json({ message: 'An error occurred. Please try again later.' });
+        });
+};

@@ -7,4 +7,5 @@ module.exports = app => {
     app.get("/api/one/users/:id", joinnowController.getOne),
     app.delete("/api/login/users/:id", joinnowController.deleteOne),
     app.put("/api/edit/users/:id", joinnowController.updateOne)
+    app.post("/api/signin/user", joinnowController.signIn)
 }
