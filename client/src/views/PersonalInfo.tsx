@@ -34,33 +34,33 @@ const PersonalInfo = () => {
     };
 
 
-    // useEffect(() => {
-    //     axios.get(`http://localhost:8000/api/login/users/${id}`)
-    //         .then(res => {
-    //             setFirstName(res.data.firstName);
-    //             setLastName(res.data.lastName);
-    //             setEmail(res.data.email);
-    //             setPassword(res.data.password);
-    //             console.log(res.data.firstName)
-    //         })
-    //         .catch(err => {
-    //             console.log(err, "error occured")
-    //         })
-    // })
+    useEffect(() => {
+        axios.get(`http://localhost:8000/api/login/users/${id}`)
+            .then(res => {
+                setFirstName(res.data.firstName);
+                setLastName(res.data.lastName);
+                setEmail(res.data.email);
+                setPassword(res.data.password);
+                console.log(res.data.firstName)
+            })
+            .catch(err => {
+                console.log(err, "error occured")
+            })
+    })
 
-    // const handleUpdate = (event: React.FormEvent) => {
-    //     event.preventDefault();
-    //     const updateUser = {
-    //         firstName,
-    //         lastName,
-    //         email,
-    //         password
-    //     }
-    //     axios.put(`http://localhost:8000/api/edit/users/${id}`, updateUser) 
-    //         .then(() => {
-    //         })
-    //         .catch((err) => console.error(err));
-    // }
+    const handleUpdate = (event: React.FormEvent) => {
+        event.preventDefault();
+        const updateUser = {
+            firstName,
+            lastName,
+            email,
+            password
+        }
+        axios.put(`http://localhost:8000/api/login/users/${id}`, updateUser) 
+            .then(() => {
+            })
+            .catch((err) => console.error(err));
+    }
 
     // const postRegistrationDetails = () => {
     //     axios
@@ -114,7 +114,7 @@ const PersonalInfo = () => {
                             <label className="block text-gray-500 text-sm  mb-2" style={{ textAlign: 'center', marginBottom: '2rem' }}>
                                 Edit Account Information
                             </label>
-                            <form>
+                            <form onSubmit={handleUpdate}>
                                 <label className="block text-gray-700 text-sm font-bold mb-2" style={{ textAlign: 'left' }}>
                                     * indicates required field
                                 </label>
