@@ -11,6 +11,9 @@ const JoinnowSchema = new mongoose.Schema({
         required: [true, "Last name  is required"],
         minlength: [3, "Last name must be at least 3 characters"]
     },
+    phoneNumber: {
+        type: Number,
+    },
     email: {
         type: String, 
         required : [true, "Email is required"],

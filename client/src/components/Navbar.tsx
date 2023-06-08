@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { ImLocation } from 'react-icons/im'
+import { FaUserCircle } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion"
 const Navbar: React.FC = () => {
@@ -26,16 +27,22 @@ const Navbar: React.FC = () => {
     }
   }, []);
   const handleLogout = () => {
-    localStorage.removeItem("userId");
-    localStorage.removeItem("firstName");
+    localStorage.clear();
     navigate("/");
     window.location.assign("/");
   };
   const [showDropdown, setShowDropdown] = useState(false);
 
+  // const handleToggleDropdown = () => {
+  //   setShowDropdown(!showDropdown);
+  // };
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleToggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
+
 
   return (
     <>
@@ -63,17 +70,37 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden lg:flex lg:items-center md:order-last">
           <div className='flex items-center mr-[2rem]' >
-            <Link to="/store-locator" style={{ color: 'black' }}>Find Store</Link>
+            <Link to="/store-locator" className="flex items-center text-black">
+              <ImLocation className="mr-2" size={20} />
+              Find a Store
+            </Link>
           </div>
           <ul style={{ display: 'flex', gap: '1rem' }}>
             {firstName ? (
               <li>
                 <div className="relative">
-                  <button className="text-black p-[0.5rem] mr-[2rem]" onClick={handleToggleDropdown}>
-                    Account &#9660;
+
+                  {/* <button className="flex items-center text-black mr-[2rem]" onClick={handleToggleDropdown}>
+                  <FaUserCircle className="mr-2" size={20} /> Account &#9660;
+                  </button> */}
+
+                  <button className="flex items-center text-black mr-[2rem]" onClick={handleToggleDropdown}>
+                    <FaUserCircle className="mr-2" size={20} />
+                    Account
+                    <span
+                      className={`transition-transform duration-300 transform ${isMenuOpen ? 'rotate-180' : ''
+                        }`}
+                      style={{
+                        display: 'inline-block',
+                        verticalAlign: 'middle',
+                      }}
+                    >
+                      &#9660;
+                    </span>
                   </button>
+
                   {/* Add dropdown content here */}
-                  {showDropdown && (
+                  {isMenuOpen && (
                     <div className="absolute right-0 mt-2 bg-white shadow-lg rounded py-2 w-40">
                       {/* Add dropdown content options */}
                       <Link to="/home" className="block px-4 py-2 text-black hover:bg-gray-200">
@@ -143,7 +170,7 @@ const Navbar: React.FC = () => {
                           Account &#9660;
                         </button>
                         {/* Add dropdown content here */}
-                        {showDropdown && (
+                        {isMenuOpen && (
                           <div className="absolute right-0 mt-2 bg-white shadow-lg rounded py-2 w-40">
                             {/* Add dropdown content options */}
                             <Link to="/home" className="block px-4 py-2 text-black hover:bg-gray-200">
@@ -185,7 +212,7 @@ const Navbar: React.FC = () => {
             <div className="flex justify-start px-12">
               <Link to="/store-locator" className="font-semibold flex items-center">
                 <ImLocation className="mr-2" size={20} />
-                Find Store
+                Find a Store
               </Link>
             </div>
           </motion.div>
