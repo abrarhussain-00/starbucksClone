@@ -60,7 +60,6 @@ const PersonalInfo = () => {
                             <p style={{ textAlign: 'left' }}>Do not share login info, you will not be able to change!</p>
                             <br />
                         </div>
-
                     </div>
                     <br /><br /><br /><br />
                 </div>
