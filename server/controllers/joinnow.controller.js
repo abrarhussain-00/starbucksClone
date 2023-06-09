@@ -1,13 +1,24 @@
 const User = require('../models/joinnow.model');
 
 module.exports.create = (req, res) => {
-    User.create(req.body)
-        .then(newUser => {
-            return res.json(newUser)
-        }).catch(err => {
-            return res.status(400).json(err)
+    User.findOne({ email: req.body.email }) // Check if email already exists
+        .then((existingUser) => {
+            if (existingUser) {
+                return res.status(409).json({ message: 'Email taken, please use another email' });
+            }
+
+            User.create(req.body)
+                .then((newUser) => {
+                    return res.json(newUser);
+                })
+                .catch((err) => {
+                    return res.status(400).json(err);
+                });
         })
-}
+        .catch((err) => {
+            return res.status(500).json({ message: 'An error occurred. Please try again later.' });
+        });
+};
 
 module.exports.getAll = (req, res) => {
     User.find({})
@@ -52,9 +63,10 @@ module.exports.updateOne = (req, res) => {
 module.exports.signIn = (req, res) => {
     const { email, password } = req.body;
     User.findOne({ email })
-    .then(user => {
-        if (!user || user.password !== password) {
-            return res.status(401).json({ message: 'Invalid email or password' });
+        .then(user => {
+            if (!user || user.password !== password) {
+                return res.status(401).json({ message: 'Invalid email or password' });
+
             }
             return res.json(user);
         })
