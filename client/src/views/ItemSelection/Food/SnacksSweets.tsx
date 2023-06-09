@@ -12,18 +12,36 @@ const SnacksSweets = () => {
                 <div>
                     <p className='text-start'><a href="/menu">Menu / </a><span className='font-bold' style={{ color: 'gray' }}>Hot Breakfast</span></p>
                     <br />
-                    <p className='font-bold text-start text-[30px]'>Hot Breakfast</p>
+                    <p className='font-bold text-start text-[30px]'>Snacks & Sweets</p>
                     <br /><br />
                     {/* Breakfast Sandwiches & Wraps */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Breakfast Sandwiches & Wraps</p>
+                        <p className='font-bold text-start text-[24px]'>Biscotti & Cookies</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
-                        <div className="text-center flex">
+                        <div className="text-center gap-10 grid grid-cols-4 ">
                             <a href="#" className="items-center">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsmYCKDgr-f-yqPSYJDr3c5K-omrhCy0VFrfEgpk5hA&s" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/d76e82a4f5434f719083b3b2d03bf008.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Caffè Americano</span>
+                                <span className='text-center'>Madeleines</span>
+                                <div className='font-bold'>🚫 Not available</div>
+                            </a>
+                            <a href="#" className="items-center">
+                                <img src="https://globalassets.starbucks.com/assets/8a984f426b504c6fa6af895cd09cf8df.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <br />
+                                <span className='text-center'>Vanilla Biscotti<br/>with Almonds</span>
+                                <div className='font-bold'>🚫 Not available</div>
+                            </a>
+                            <a href="#" className="items-center">
+                                <img src="https://globalassets.starbucks.com/assets/c5d9a97775544dfb87e1c4283c0e70fd.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <br />
+                                <span className='text-center'>Shortbread <br/>Cookies</span>
+                                <div className='font-bold'>🚫 Not available</div>
+                            </a>
+                            <a href="#" className="items-center">
+                                <img src="https://globalassets.starbucks.com/assets/88eb640cf0844a0a82db9fbfb8a679d7.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
+                                <br />
+                                <span className='text-center'>Rip van-Waffles-<br/>Honeys & Oats</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
@@ -31,38 +49,26 @@ const SnacksSweets = () => {
                     <br /><br />
                     {/* Brewed Coffees */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Brewed Coffees</p>
+                        <p className='font-bold text-start text-[24px]'>Chocolates & Candy</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
                             <a href="#" className="items-center">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBQIGB//EADkQAAEDAwEEBwQJBQEAAAAAAAEAAgMEBREhEjFRcQYTIjRBYYEUMpGxI0JSYnKSocHRQ4Kz0tMV/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECBAP/xAAgEQEBAAIABgMAAAAAAAAAAAAAAQIRAxIhMTJREyJB/9oADAMBAAIRAxEAPwD5whCE2UIQmwGQ4jBeR9kZQCQpBBKf6bvUYR1L/u/nH8oCNC7MTwcYzpnQ5QYZWt2nRSBvEsOEBwhCEAIQhACno6Z1TI5rdzRtO1wcZA0+KgVu1w+0VXUieOFzxhpk3OORpzQcm62LZWtg247PZ4qucadZIwkM9d+fUDyUdfT32QSS3DMDCB2HSEMGfLJXNPdprZI+iqpZrdJjEbZaYuac657Oc+oXMtkvNY4SDpPRmRzcinqqkwP9GkAY5JW3XR2nDn7WayCTTbqC0HxaxxA+CsNtFK9glkubjo4loiGTjhl3j4LPrzebfP1FS4uf4GOQPB5EKua68kd3ncNdRCf4XLfEdfh4Xttw2emc4GKvfoRoY2nBIGM9ricehXr47m1lqdE6qPVtw0vc3jkbtT5L5tHUXZwOKCXHiTG4Y3cV6VplhgEsUNRTAayPkdE1oHEdvXkQnvMfFhO1VLhY7s2Z2Xe0kO2dHHaHiPeA0wq01FIwyNdC6KSJoL2O4cf1W+2+0Qp5IZqwz7UbGObD2XEAYxntZznd5qx0jdFLaGODxCGMDGRE4DgN2zr2uKqX25Xh66x41CEK3AKCsJbDkHBDhqp1Xr+7nmEqvDyi/b+l9wpXx+0xQVzIyCzr2Avjx9l28KWuufRm5Oc+pt1wpHuJLvZ6jLHHzDiceg8V5hPKls5Y25bP0VmINH0hngJPu1NETjm5uMfDCwq6hjp59inrIathAIkja8fEOAwUsoymXLEIgOd7eeCtmjislM9prevrcglxjzGGnyGhJ5kLMyjKByx6CO+0VE0C12lsbhn6SaZzicjhn91FDU1/SC9RMlla+aVx2WueGMbhpJ944AwOKxQVPRd5Z6/JKDKfWvYx9F6t7ntFXQueGFzY2SlznY88Y465WI8Fji1wIcDgg+Csuc6O1w1UZxLS1RDT5ObtAcssdp948V1dohHWuEWjPq650Gg+SqsWuimq9cM0zuY+asKCt7s/0+aDw8oykFBSO5S3OcoQkgjCEkIDsKxQd5b6/JVgrVv7yORTic/Gt0jNnl4e1xf45f5U1STI2ne7GXU8Z+LQoJHhtoY0b31Lz+Vjf+is3oiCWnjP1YGj4Ej9lTJLpnKGr7s/kplDV92k/CgY+UZKRSJSUN2yKSZK5KEmmFymgOlbt2tT/aVTyr1mx7YPoXTHZ7MYz2jkb8a45fonE5361vPh6w0FLoAQHOI+1I7/AEEZU3SXP/szxnA6nZjI34IAz+uVo2ygioA689IasQyNJkipGj6SZ/gMfVHL3QPDGF56oqn1dRLU1D9uaZ7pJHcXE5J+JV1jcqKq7tL+AqVR1Pd5fwH5JHO7DQhChtJJMpIATSQgGtKx3Ootc8stIWiR8Rj2nDOyCQcjz08crNUsG88k4nLsvT1M1RKZZ5XSSHe5xyVwJPNRBNNw0//Z" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/1ddc6371b2dc4bdc929fac84d962e01a.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Green Apron Blend™</span>
+                                <span className='text-center'>Salted Almonds<br/>Chocolate Bites</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBQIGB//EADkQAAEDAwEEBwQJBQEAAAAAAAEAAgMEBREhEjFRcQYTIjRBYYEUMpGxI0JSYnKSocHRQ4Kz0tMV/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECBAP/xAAgEQEBAAIABgMAAAAAAAAAAAAAAQIRAxIhMTJREyJB/9oADAMBAAIRAxEAPwD5whCE2UIQmwGQ4jBeR9kZQCQpBBKf6bvUYR1L/u/nH8oCNC7MTwcYzpnQ5QYZWt2nRSBvEsOEBwhCEAIQhACno6Z1TI5rdzRtO1wcZA0+KgVu1w+0VXUieOFzxhpk3OORpzQcm62LZWtg247PZ4qucadZIwkM9d+fUDyUdfT32QSS3DMDCB2HSEMGfLJXNPdprZI+iqpZrdJjEbZaYuac657Oc+oXMtkvNY4SDpPRmRzcinqqkwP9GkAY5JW3XR2nDn7WayCTTbqC0HxaxxA+CsNtFK9glkubjo4loiGTjhl3j4LPrzebfP1FS4uf4GOQPB5EKua68kd3ncNdRCf4XLfEdfh4Xttw2emc4GKvfoRoY2nBIGM9ricehXr47m1lqdE6qPVtw0vc3jkbtT5L5tHUXZwOKCXHiTG4Y3cV6VplhgEsUNRTAayPkdE1oHEdvXkQnvMfFhO1VLhY7s2Z2Xe0kO2dHHaHiPeA0wq01FIwyNdC6KSJoL2O4cf1W+2+0Qp5IZqwz7UbGObD2XEAYxntZznd5qx0jdFLaGODxCGMDGRE4DgN2zr2uKqX25Xh66x41CEK3AKCsJbDkHBDhqp1Xr+7nmEqvDyi/b+l9wpXx+0xQVzIyCzr2Avjx9l28KWuufRm5Oc+pt1wpHuJLvZ6jLHHzDiceg8V5hPKls5Y25bP0VmINH0hngJPu1NETjm5uMfDCwq6hjp59inrIathAIkja8fEOAwUsoymXLEIgOd7eeCtmjislM9prevrcglxjzGGnyGhJ5kLMyjKByx6CO+0VE0C12lsbhn6SaZzicjhn91FDU1/SC9RMlla+aVx2WueGMbhpJ944AwOKxQVPRd5Z6/JKDKfWvYx9F6t7ntFXQueGFzY2SlznY88Y465WI8Fji1wIcDgg+Csuc6O1w1UZxLS1RDT5ObtAcssdp948V1dohHWuEWjPq650Gg+SqsWuimq9cM0zuY+asKCt7s/0+aDw8oykFBSO5S3OcoQkgjCEkIDsKxQd5b6/JVgrVv7yORTic/Gt0jNnl4e1xf45f5U1STI2ne7GXU8Z+LQoJHhtoY0b31Lz+Vjf+is3oiCWnjP1YGj4Ej9lTJLpnKGr7s/kplDV92k/CgY+UZKRSJSUN2yKSZK5KEmmFymgOlbt2tT/aVTyr1mx7YPoXTHZ7MYz2jkb8a45fonE5361vPh6w0FLoAQHOI+1I7/AEEZU3SXP/szxnA6nZjI34IAz+uVo2ygioA689IasQyNJkipGj6SZ/gMfVHL3QPDGF56oqn1dRLU1D9uaZ7pJHcXE5J+JV1jcqKq7tL+AqVR1Pd5fwH5JHO7DQhChtJJMpIATSQgGtKx3Ootc8stIWiR8Rj2nDOyCQcjz08crNUsG88k4nLsvT1M1RKZZ5XSSHe5xyVwJPNRBNNw0//Z" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/c4bd8788c72b416c99c5134680e1c8e5.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Featured <br /> Medium Roast <br /> PikePlace® Roast</span>
+                                <span className='text-center'>Dark Chocolate <br /> Covered Espresso <br /> Beans</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBQIGB//EADkQAAEDAwEEBwQJBQEAAAAAAAEAAgMEBREhEjFRcQYTIjRBYYEUMpGxI0JSYnKSocHRQ4Kz0tMV/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECBAP/xAAgEQEBAAIABgMAAAAAAAAAAAAAAQIRAxIhMTJREyJB/9oADAMBAAIRAxEAPwD5whCE2UIQmwGQ4jBeR9kZQCQpBBKf6bvUYR1L/u/nH8oCNC7MTwcYzpnQ5QYZWt2nRSBvEsOEBwhCEAIQhACno6Z1TI5rdzRtO1wcZA0+KgVu1w+0VXUieOFzxhpk3OORpzQcm62LZWtg247PZ4qucadZIwkM9d+fUDyUdfT32QSS3DMDCB2HSEMGfLJXNPdprZI+iqpZrdJjEbZaYuac657Oc+oXMtkvNY4SDpPRmRzcinqqkwP9GkAY5JW3XR2nDn7WayCTTbqC0HxaxxA+CsNtFK9glkubjo4loiGTjhl3j4LPrzebfP1FS4uf4GOQPB5EKua68kd3ncNdRCf4XLfEdfh4Xttw2emc4GKvfoRoY2nBIGM9ricehXr47m1lqdE6qPVtw0vc3jkbtT5L5tHUXZwOKCXHiTG4Y3cV6VplhgEsUNRTAayPkdE1oHEdvXkQnvMfFhO1VLhY7s2Z2Xe0kO2dHHaHiPeA0wq01FIwyNdC6KSJoL2O4cf1W+2+0Qp5IZqwz7UbGObD2XEAYxntZznd5qx0jdFLaGODxCGMDGRE4DgN2zr2uKqX25Xh66x41CEK3AKCsJbDkHBDhqp1Xr+7nmEqvDyi/b+l9wpXx+0xQVzIyCzr2Avjx9l28KWuufRm5Oc+pt1wpHuJLvZ6jLHHzDiceg8V5hPKls5Y25bP0VmINH0hngJPu1NETjm5uMfDCwq6hjp59inrIathAIkja8fEOAwUsoymXLEIgOd7eeCtmjislM9prevrcglxjzGGnyGhJ5kLMyjKByx6CO+0VE0C12lsbhn6SaZzicjhn91FDU1/SC9RMlla+aVx2WueGMbhpJ944AwOKxQVPRd5Z6/JKDKfWvYx9F6t7ntFXQueGFzY2SlznY88Y465WI8Fji1wIcDgg+Csuc6O1w1UZxLS1RDT5ObtAcssdp948V1dohHWuEWjPq650Gg+SqsWuimq9cM0zuY+asKCt7s/0+aDw8oykFBSO5S3OcoQkgjCEkIDsKxQd5b6/JVgrVv7yORTic/Gt0jNnl4e1xf45f5U1STI2ne7GXU8Z+LQoJHhtoY0b31Lz+Vjf+is3oiCWnjP1YGj4Ej9lTJLpnKGr7s/kplDV92k/CgY+UZKRSJSUN2yKSZK5KEmmFymgOlbt2tT/aVTyr1mx7YPoXTHZ7MYz2jkb8a45fonE5361vPh6w0FLoAQHOI+1I7/AEEZU3SXP/szxnA6nZjI34IAz+uVo2ygioA689IasQyNJkipGj6SZ/gMfVHL3QPDGF56oqn1dRLU1D9uaZ7pJHcXE5J+JV1jcqKq7tL+AqVR1Pd5fwH5JHO7DQhChtJJMpIATSQgGtKx3Ootc8stIWiR8Rj2nDOyCQcjz08crNUsG88k4nLsvT1M1RKZZ5XSSHe5xyVwJPNRBNNw0//Z" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/806e28baa7f5412a8300774ac4eda5ae.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Featured <br /> Starbucks® Dark <br /> Roast Coffee</span>
-                                <div className='font-bold'>🚫 Not available</div>
-                            </a>
-                            <a href="#" className="items-center">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBQIGB//EADkQAAEDAwEEBwQJBQEAAAAAAAEAAgMEBREhEjFRcQYTIjRBYYEUMpGxI0JSYnKSocHRQ4Kz0tMV/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECBAP/xAAgEQEBAAIABgMAAAAAAAAAAAAAAQIRAxIhMTJREyJB/9oADAMBAAIRAxEAPwD5whCE2UIQmwGQ4jBeR9kZQCQpBBKf6bvUYR1L/u/nH8oCNC7MTwcYzpnQ5QYZWt2nRSBvEsOEBwhCEAIQhACno6Z1TI5rdzRtO1wcZA0+KgVu1w+0VXUieOFzxhpk3OORpzQcm62LZWtg247PZ4qucadZIwkM9d+fUDyUdfT32QSS3DMDCB2HSEMGfLJXNPdprZI+iqpZrdJjEbZaYuac657Oc+oXMtkvNY4SDpPRmRzcinqqkwP9GkAY5JW3XR2nDn7WayCTTbqC0HxaxxA+CsNtFK9glkubjo4loiGTjhl3j4LPrzebfP1FS4uf4GOQPB5EKua68kd3ncNdRCf4XLfEdfh4Xttw2emc4GKvfoRoY2nBIGM9ricehXr47m1lqdE6qPVtw0vc3jkbtT5L5tHUXZwOKCXHiTG4Y3cV6VplhgEsUNRTAayPkdE1oHEdvXkQnvMfFhO1VLhY7s2Z2Xe0kO2dHHaHiPeA0wq01FIwyNdC6KSJoL2O4cf1W+2+0Qp5IZqwz7UbGObD2XEAYxntZznd5qx0jdFLaGODxCGMDGRE4DgN2zr2uKqX25Xh66x41CEK3AKCsJbDkHBDhqp1Xr+7nmEqvDyi/b+l9wpXx+0xQVzIyCzr2Avjx9l28KWuufRm5Oc+pt1wpHuJLvZ6jLHHzDiceg8V5hPKls5Y25bP0VmINH0hngJPu1NETjm5uMfDCwq6hjp59inrIathAIkja8fEOAwUsoymXLEIgOd7eeCtmjislM9prevrcglxjzGGnyGhJ5kLMyjKByx6CO+0VE0C12lsbhn6SaZzicjhn91FDU1/SC9RMlla+aVx2WueGMbhpJ944AwOKxQVPRd5Z6/JKDKfWvYx9F6t7ntFXQueGFzY2SlznY88Y465WI8Fji1wIcDgg+Csuc6O1w1UZxLS1RDT5ObtAcssdp948V1dohHWuEWjPq650Gg+SqsWuimq9cM0zuY+asKCt7s/0+aDw8oykFBSO5S3OcoQkgjCEkIDsKxQd5b6/JVgrVv7yORTic/Gt0jNnl4e1xf45f5U1STI2ne7GXU8Z+LQoJHhtoY0b31Lz+Vjf+is3oiCWnjP1YGj4Ej9lTJLpnKGr7s/kplDV92k/CgY+UZKRSJSUN2yKSZK5KEmmFymgOlbt2tT/aVTyr1mx7YPoXTHZ7MYz2jkb8a45fonE5361vPh6w0FLoAQHOI+1I7/AEEZU3SXP/szxnA6nZjI34IAz+uVo2ygioA689IasQyNJkipGj6SZ/gMfVHL3QPDGF56oqn1dRLU1D9uaZ7pJHcXE5J+JV1jcqKq7tL+AqVR1Pd5fwH5JHO7DQhChtJJMpIATSQgGtKx3Ootc8stIWiR8Rj2nDOyCQcjz08crNUsG88k4nLsvT1M1RKZZ5XSSHe5xyVwJPNRBNNw0//Z" width={150} className="rounded-full mr-2" />
-                                <br />
-                                <span className='text-center'>Decaf Pike Place®<br /> Roast </span>
-                                <div className='font-bold'>🚫 Not available</div>
-                            </a>
-                            <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
-                                <br />
-                                <span className='text-center'>Caffè Misto</span>
+                                <span className='text-center'>Dark Chocolate <br /> Peanut Butter <br /> Cups</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
@@ -70,14 +76,20 @@ const SnacksSweets = () => {
                     <br /><br />
                     {/* Americanos */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Cappuccinos</p>
+                        <p className='font-bold text-start text-[24px]'>Fruit & Nuts</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center flex">
                             <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/5c515339667943ce84dc56effdf5fc1b.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/b861c0fb0ffb45b4833131cec8524a1c.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Cappuccinos</span>
+                                <span className='text-center'>Squirrel Band <br/> Fruits & Nuts</span>
+                                <div className='font-bold'>🚫 Not available</div>
+                            </a>
+                            <a href="#" className="items-center">
+                                <img src="https://globalassets.starbucks.com/assets/b510d3c921ec4e4b918759886fc8441d.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <br />
+                                <span className='text-center'>Peter Rabbit<br/>Organic<br/>Strawberry Bannana</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
@@ -85,7 +97,8 @@ const SnacksSweets = () => {
                     <br /><br />
                     {/* Expresso Shots */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Expresso Shots</p>
+                        <p className='font-bold text-start text-[24px]'>Gum & Mints
+</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
@@ -104,9 +117,8 @@ const SnacksSweets = () => {
                         </div>
                     </div>
                     <br /><br />
-                    {/* Flat Whites */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Flat White</p>
+                        <p className='font-bold text-start text-[24px]'>Popcorn & Chips</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
@@ -127,7 +139,7 @@ const SnacksSweets = () => {
                     <br /><br />
                     {/* Lattes */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Lattes</p>
+                        <p className='font-bold text-start text-[24px]'>Meat & Cheese</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
@@ -154,7 +166,7 @@ const SnacksSweets = () => {
                     <br /><br />
                     {/* Macchiatoes */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Macchiatoes</p>
+                        <p className='font-bold text-start text-[24px]'>Snack Bars</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
@@ -173,7 +185,8 @@ const SnacksSweets = () => {
                     </div>
                     {/* Mochas */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Mochas</p>
+                        <p className='font-bold text-start text-[24px]'>Spreads
+</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
@@ -187,39 +200,6 @@ const SnacksSweets = () => {
                                 <img src="https://globalassets.starbucks.com/assets/3eab25199e994b689fa5c047fc31f217.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>White Chocolate <br /> Mocha</span>
-                                <div className='font-bold'>🚫 Not available</div>
-                            </a>
-                        </div>
-                    </div>
-                    <br /><br />
-                    {/* Coffee Travelers */}
-                    <div>
-                        <p className='font-bold text-start text-[24px]'>Coffee Travelers</p>
-                        <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
-                        <br /><br />
-                        <div className="text-center gap-10 grid grid-cols-4 ">
-                            <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
-                                <br />
-                                <span className='text-center'>Coffee Traveler - <br/> Veranda Blend®</span>
-                                <div className='font-bold'>🚫 Not available</div>
-                            </a>
-                            <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
-                                <br />
-                                <span className='text-center'>Coffee Traveler - <br/> Dark Roast</span>
-                                <div className='font-bold'>🚫 Not available</div>
-                            </a>
-                            <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
-                                <br />
-                                <span className='text-center'>Coffee Traveler - <br /> Pike Place® Roast </span>
-                                <div className='font-bold'>🚫 Not available</div>
-                            </a>
-                            <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/9d5739c00da14ea8acc0497989b08016.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
-                                <br />
-                                <span className='text-center'>Coffee Traveler - <br /> Decaf Pike Place®<br />  Roast </span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
