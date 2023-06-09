@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const storedFirstName = localStorage.getItem('firstName');
     if (storedFirstName) {
-      setFirstName(JSON.parse(storedFirstName));
+      setFirstName(storedFirstName);
     }
   }, []);
   const handleLogout = () => {
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
           <ul style={{ display: 'flex', gap: '1rem' }}>
             {firstName ? (
               <li>
-                <div className="relative">
+                <div className="relative z-50">
 
                   {/* <button className="flex items-center text-black mr-[2rem]" onClick={handleToggleDropdown}>
                   <FaUserCircle className="mr-2" size={20} /> Account &#9660;

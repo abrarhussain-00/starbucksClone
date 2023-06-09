@@ -17,7 +17,8 @@ const JoinnowSchema = new mongoose.Schema({
     email: {
         type: String, 
         required : [true, "Email is required"],
-        minlength: [3, "Email must be at least 3 characters"]
+        minlength: [3, "Email must be at least 3 characters"],
+        unique: true
         // validate: {
         //     validator: val => /^([\w-\.]+@([\w-]+\.)+[\w-]+)?$/.test(val),
         //     message: "Please enter a valid email"

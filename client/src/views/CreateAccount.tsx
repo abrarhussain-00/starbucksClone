@@ -13,6 +13,8 @@ const CreateAccount: React.FC = () => {
   const [emailUpdate, setEmailUpdate] = useState(true);
   const [terms, setTerms] = useState(false);
   const [userLoggedIn, setUserLoggedIn] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
   const navigate = useNavigate();
 
   const handleFirstnameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,7 +54,6 @@ const CreateAccount: React.FC = () => {
     setUserLoggedIn(userId ? true : false);
   }, []);
 
-
   const postRegistrationDetails = () => {
     axios
       .post("http://localhost:8000/api/login/users", {
@@ -73,19 +74,24 @@ const CreateAccount: React.FC = () => {
         navigate(`/home`);
         window.location.assign("/home");
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        if (err.response && err.response.status === 409) {
+          setErrorMessage('Email or username is taken, please try again.');
+        } else {
+          setErrorMessage('An error occurred. Please try again later.');
+        }
+      });
   };
-
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    setErrorMessage(''); // Clear previous error message
     postRegistrationDetails();
-    console.log({ firstName, lastName, email, phoneNumber, password });
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setPhoneNumber("");
-    setPassword("");
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPhoneNumber('');
+    setPassword('');
   };
 
   return (
@@ -153,6 +159,7 @@ const CreateAccount: React.FC = () => {
                 required
               />
             </div>
+            {errorMessage && <p className="text-red-500">{errorMessage}</p>}
             <p style={{ textAlign: 'left' }}>This will be your username</p>
             <br />
             <div className="mb-6">
@@ -220,14 +227,11 @@ const CreateAccount: React.FC = () => {
                 className="form-checkbox h-5 w-5 text-green-800"
                 required
               />
+              <span className="ml-2 text-start">
+                I agree to the Starbucks® Rewards Terms opens in new window and the Starbucks Card Terms opens in new window and have read the Starbucks Privacy Statement opens in new window.
+              </span>
             </label>
-            <span className="text-gray-700" style={{ textAlign: 'left' }}>
-              I agree to the Starbucks® Rewards Terms opens in new window and the
-              Starbucks Card Terms opens in new window and have read the Starbucks Privacy
-              Statement opens in new window.
-            </span>
             <br /><br />
-
             <div className="flex items-center justify-end">
               <button
                 type="submit"

@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const SignIn: React.FC = () => {
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [userLoggedIn, setUserLoggedIn] = useState(false)
   const [username, setUsername] = useState('');
-  const [firstName, setFirstName] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -30,14 +34,19 @@ const SignIn: React.FC = () => {
         email: username,
         password: password,
       });
-  
+
       // Successful Login:
       if (response.status === 200) {
         // Store username and password in local storage
         localStorage.setItem('username', username);
         localStorage.setItem('password', password);
+        localStorage.setItem('firstName', response.data.firstName); 
+        localStorage.setItem('lastName', response.data.lastName);
+        localStorage.setItem('email', response.data.email);
+        localStorage.setItem('phoneNumber', response.data.phoneNumber);
+        window.location.assign("/home");
         navigate('/home');
-        console.log(localStorage)
+        console.log(localStorage);
       } else {
         setError('Invalid username or password');
       }
@@ -49,10 +58,10 @@ const SignIn: React.FC = () => {
       }
     }
   };
-  
-  
+
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+    postRegistrationDetails()
     setError(''); // Clear any previous error messages
     // Validations: Email and Password
     if (!username.trim()) {
@@ -66,6 +75,28 @@ const SignIn: React.FC = () => {
     signIn();
   };
 
+  const postRegistrationDetails = () => {
+    axios
+      .post("http://localhost:8000/api/login/users", {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+        password,
+      })
+      .then((res) => {
+        localStorage.setItem('userId', res.data.id);
+        localStorage.setItem('firstName', res.data.firstName);
+        localStorage.setItem('lastName', res.data.lastName);
+        localStorage.setItem('email', res.data.email);
+        localStorage.setItem('phoneNumber', res.data.phoneNumber);
+        setUserLoggedIn(true); // Set the login status
+        navigate(`/home`);
+        window.location.assign("/home");
+      })
+      .catch((err) => console.error(err));
+  };
+  
 
   return (
     <div>
