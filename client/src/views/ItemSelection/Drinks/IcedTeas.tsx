@@ -35,25 +35,28 @@ const IcedTeas = () => {
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
                             <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/7b483f4e212b4e18ac7ed488c10fa25c.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/f56f2f6798504d72812581fbd3c326b8.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Black Tea</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/f56f2f6798504d72812581fbd3c326b8.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/79bb8778f74c4f73bdd4a6cb1d8cea2b.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Iced Black Tea <br />Lemonade</span>
+                                <span className='text-center'>Iced Black Tea <br /> Lemonade</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/c21355c84f60481da265614667b168d8.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/c21355c84f60481da265614667b168d8.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Iced Royale English<br /> Breakfast Tea Latte </span>
+                                <span className='text-center'>Iced Royal <br />English Breakfast <br />Tea Latte</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
-                            <br />
                             <a href="#" className="items-center">
-                                <img src="https://globalassets.starbucks.com/assets/530e6f066a5d433d93fcc088e4b39120.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/530e6f066a5d433d93fcc088e4b39120.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Iced London Fog Tea Latte</span>
+                                <span className='text-center'>Iced London Fog <br />Tea Latte</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
                     </div>
@@ -67,7 +70,7 @@ const IcedTeas = () => {
                             <a href="#" className="items-center">
                                 <img src="https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=90/media/photosV2/ec36c25c-26da-4813-989c-9f930eef84d2-retina-large.jpg" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Iced Chai Tea Latte</span>
+                                <span className='text-center'>Iced Chai Tea <br /> Latte</span>
                             </a>
                         </div>
                     </div>

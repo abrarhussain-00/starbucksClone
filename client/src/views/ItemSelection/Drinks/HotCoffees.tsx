@@ -158,7 +158,7 @@ const HotCoffees = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
-                            <a href="#" className="items-center">
+                            <a href="/menu/product/0015/hot-coffees" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/630461ac0c2548cba7e2ab6482bc6477.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Caramel Macchiato</span>

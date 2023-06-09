@@ -10,7 +10,7 @@ const Bakery = () => {
             <div className="flex">
                 <MenuSideNav />
                 <div>
-                    <p className='text-start'><a href="/menu">Menu / </a><span className='font-bold' style={{ color: 'gray' }}>Hot Coffees</span></p>
+                    <p className='text-start'><a href="/menu">Menu / </a><span className='font-bold' style={{ color: 'gray' }}>Bakery</span></p>
                     <br />
                     <p className='font-bold text-start text-[30px]'>Bakery</p>
                     <br /><br />
@@ -19,7 +19,7 @@ const Bakery = () => {
                         <p className='font-bold text-start text-[24px]'>Bagels</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
-                        <div className="text-center flex">
+                        <div className="text-center gap-10 grid grid-cols-4">
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/2362e79aa0ab4c37a930956c67ab557a.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
@@ -32,7 +32,6 @@ const Bakery = () => {
                                 <span className='text-center'>Everything Bagles</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
-                            <br/>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/3d32d9ac0991482596873baa3f649211.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />

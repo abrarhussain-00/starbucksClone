@@ -20,9 +20,8 @@ const RewardFooter = () => {
                         <h4 className='text-gray-500 font-semibold text-[16px] font-main'>TERMS OF USE</h4>
                         <p className='text-left text-[14px] pt-5'>For full program details visit <a href="#" className='text-green-color border-b border-green-color'>starbuck.com/rewards/terms</a>.</p>
                         <p className='text-left text-[14px] pt-5'>Earn 1 Star per $1 when digitally loading your Starbucks Card with your Starbucks® Rewards Visa® Card: See your Card Rewards Program Agreement for more details.</p>
-                        <p className='text-left text-[14px] pt-5'>Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the <a href="#" className='text-green-color border-b border-green-color'>Starbucks Store Locator</a>
-                            Starbucks Store Locator
-                            opens in new window and search for locations honoring “Redeem Rewards”.</p>
+                        <p className='text-left text-[14px] pt-5'>Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor Rewards at this time. Visit the <a href="/store-locator" className='text-green-color border-b border-green-color'>Starbucks Store Locator. </a>
+                            Starbucks Store Locator opens in new window and search for locations honoring “Redeem Rewards”.</p>
                         <p className='text-left text-[14px] pt-5'>Deposit and credit card products provided by JPMorgan Chase Bank, N.A. Member FDIC</p>
                         <h4 className='pt-7 text-gray-500 font-semibold text-[16px] font-main'>REDEEMING REWARDS</h4>
                         <p className='text-left text-[14px] pt-5'>Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200 Stars for free food or drink items only.</p>
