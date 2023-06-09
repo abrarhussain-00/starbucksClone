@@ -43,7 +43,6 @@ const Navbar: React.FC = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
 
-
   return (
     <>
       <nav className="flex items-center justify-between bg-white p-[1rem]" style={{ borderBottom: '3px solid rgb(224,224,224)' }}>

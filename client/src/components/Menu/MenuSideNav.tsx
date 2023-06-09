@@ -29,28 +29,28 @@ const MenuSideNav = () => {
                 <div>
                     <h2 className="text-xl font-bold mt-6 mb-4 text-start">At Home Coffee</h2>
                     <ul className="list-none ml-0 text-start">
-                        <li style={{color:'gray'}}><a href="#">Whole Bean</a></li>
-                        <li style={{color:'gray'}}><a href="#">VIA® Instant</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/at-home-coffee/whole-bean">Whole Bean</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/at-home-coffee/via-instant">VIA® Instant</a></li>
                     </ul>
                 </div>
                 <div>
                     <h2 className="text-xl font-bold mt-6 mb-4 text-start">Merchandise</h2>
                     <ul className="list-none ml-0 text-start">
-                        <li style={{color:'gray'}}><a href="#">Cold Cups</a></li>
-                        <li style={{color:'gray'}}><a href="#">Tumblers</a></li>
-                        <li style={{color:'gray'}}><a href="#">Mugs</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/merchandise/cold-cups">Cold Cups</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/merchandise/tumblers">Tumblers</a></li>
+                        {/* <li style={{color:'gray'}}><a href="#">Mugs</a></li>
                         <li style={{color:'gray'}}><a href="#">Water Bottles</a></li>
-                        <li style={{color:'gray'}}><a href="#">Other</a></li>
+                        <li style={{color:'gray'}}><a href="#">Other</a></li> */}
                     </ul>
                 </div>
-                <div>
+                {/* <div>
                     <h2 className="text-xl font-bold mt-6 mb-4 text-start">Gift Cards</h2>
                     <ul className="list-none ml-0 text-start">
                         <li style={{color:'gray'}}><a href="#">Happy Birthday</a></li>
                         <li style={{color:'gray'}}><a href="#">Thank You</a></li>
                         <li style={{color:'gray'}}><a href="#">Traditional</a></li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ const SnacksSweets = () => {
             <div className="flex">
                 <MenuSideNav />
                 <div>
-                    <p className='text-start'><a href="/menu">Menu / </a><span className='font-bold' style={{ color: 'gray' }}>Hot Breakfast</span></p>
+                    <p className='text-start'><a href="/menu">Menu / </a><span className='font-bold' style={{ color: 'gray' }}>Snacks & Sweets</span></p>
                     <br />
                     <p className='font-bold text-start text-[30px]'>Snacks & Sweets</p>
                     <br /><br />
@@ -79,7 +79,7 @@ const SnacksSweets = () => {
                         <p className='font-bold text-start text-[24px]'>Fruit & Nuts</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
-                        <div className="text-center flex">
+                        <div className="text-center gap-10 grid grid-cols-4">
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/b861c0fb0ffb45b4833131cec8524a1c.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />
@@ -97,8 +97,7 @@ const SnacksSweets = () => {
                     <br /><br />
                     {/* Expresso Shots */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Gum & Mints
-</p>
+                        <p className='font-bold text-start text-[24px]'>Gum & Mints</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
@@ -185,8 +184,7 @@ const SnacksSweets = () => {
                     </div>
                     {/* Mochas */}
                     <div>
-                        <p className='font-bold text-start text-[24px]'>Spreads
-</p>
+                        <p className='font-bold text-start text-[24px]'>Spreads</p>
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">

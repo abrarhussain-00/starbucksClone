@@ -35,6 +35,7 @@ import WholeBean from './views/ItemSelection/HomeCoffee/WholeBean';
 import ViaInstant from './views/ItemSelection/HomeCoffee/ViaInstant';
 import ColdCups from './views/ItemSelection/Merchandise/ColdCups';
 import Tumblers from './views/ItemSelection/Merchandise/Tumblers';
+import CaramelMach from './views/Cart/Drinks/CaramelMach';
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
         <Route path='/menu/at-home-coffee/via-instant' element={<ViaInstant/>}/>
         <Route path='/menu/merchandise/cold-cups' element={<ColdCups/>}/>
         <Route path='/menu/merchandise/tumblers' element={<Tumblers/>}/>
+        <Route path='/menu/product/0015/hot-coffees' element={<CaramelMach/>}/>
       </Routes>
       <Footer/>
     </div>
