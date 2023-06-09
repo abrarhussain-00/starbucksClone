@@ -7,24 +7,23 @@ const MenuSideNav = () => {
                 <div>
                     <h2 className="text-xl font-bold mb-4 text-start">Drinks</h2>
                     <ul className="list-none ml-0 text-start">
-                        <li style={{color:'gray'}}><a href="#">Oleato™</a></li>
-                        <li style={{color:'gray'}}><a href="#">Hot Coffees</a></li>
-                        <li style={{color:'gray'}}><a href="#">Hot Teas</a></li>
-                        <li style={{color:'gray'}}><a href="#">Hot Drinks</a></li>
-                        <li style={{color:'gray'}}><a href="#">Frappuccino® Blended Beverages</a></li>
-                        <li style={{color:'gray'}}><a href="#">Cold Coffees</a></li>
-                        <li style={{color:'gray'}}><a href="#">Iced Teas</a></li>
-                        <li style={{color:'gray'}}><a href="#">Cold Drinks</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/drinks/hot-coffees">Hot Coffees</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/drinks/hot-teas">Hot Teas</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/drinks/hot-drinks">Hot Drinks</a></li>
+                        <li style={{color:'gray'}}><a href="">Frappuccino® Blended Beverages</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/drinks/cold-coffees">Cold Coffees</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/drinks/iced-teas">Iced Teas</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/drinks/cold-drinks">Cold Drinks</a></li>
                     </ul>
                 </div>
                 <div>
                     <h2 className="text-xl font-bold mt-6 mb-4 text-start">Food</h2>
                     <ul className="list-none ml-0 text-start">
-                        <li style={{color:'gray'}}><a href="#">Hot Breakfast</a></li>
-                        <li style={{color:'gray'}}><a href="#">Oatmeal &amp; Yogurt</a></li>
-                        <li style={{color:'gray'}}><a href="#">Bakery</a></li>
-                        <li style={{color:'gray'}}><a href="#">Lunch</a></li>
-                        <li style={{color:'gray'}}><a href="#">Snacks &amp; Sweets</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/food/hot-breakfast">Hot Breakfast</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/food/oatmeal-yogurt">Oatmeal &amp; Yogurt</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/food/bakery">Bakery</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/food/lunch">Lunch</a></li>
+                        <li style={{color:'gray'}}><a href="/menu/food/snacks-sweets">Snacks &amp; Sweets</a></li>
                     </ul>
                 </div>
                 <div>

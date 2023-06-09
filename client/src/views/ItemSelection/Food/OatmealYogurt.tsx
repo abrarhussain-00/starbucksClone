@@ -21,21 +21,21 @@ const OatmealYogurt = () => {
                         <br /><br />
                         <div className="text-center flex gap-20">
                             <a href="#" className="items-center">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsmYCKDgr-f-yqPSYJDr3c5K-omrhCy0VFrfEgpk5hA&s" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/D1FB41D7B2A646A6865E707D25FB9CBF.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Caffè Americano</span>
+                                <span className='text-center'>Rolled & Steel-Cut<br/>Oatmeal</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsmYCKDgr-f-yqPSYJDr3c5K-omrhCy0VFrfEgpk5hA&s" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/bb65a9c21ce34ad5b9f99f58615b8211.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Caffè Americano</span>
+                                <span className='text-center'>Berry Trio Parfait</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsmYCKDgr-f-yqPSYJDr3c5K-omrhCy0VFrfEgpk5hA&s" width={150} className="rounded-full mr-2" />
+                                <img src="https://globalassets.starbucks.com/assets/d9814c54a23442e880665176d4047a13.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
-                                <span className='text-center'>Caffè Americano</span>
+                                <span className='text-center'>Strawberry Overnight<br/>Grains</span>
                                 <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>

@@ -12,7 +12,7 @@ const ViaInstant = () => {
                 <div>
                     <p className='text-start'><a href="/menu">Menu / </a><span className='font-bold' style={{ color: 'gray' }}>Hot Breakfast</span></p>
                     <br />
-                    <p className='font-bold text-start text-[30px]'>Hot Breakfast</p>
+                    <p className='font-bold text-start text-[30px]'>VIA® Instant</p>
                     <br /><br />
                     {/* Breakfast Sandwiches & Wraps */}
                     <div>
