@@ -66,6 +66,7 @@ module.exports.signIn = (req, res) => {
         .then(user => {
             if (!user || user.password !== password) {
                 return res.status(401).json({ message: 'Invalid email or password' });
+
             }
             return res.json(user);
         })

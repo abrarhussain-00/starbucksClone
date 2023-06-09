@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +10,7 @@ const SignIn: React.FC = () => {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [userLoggedIn, setUserLoggedIn] = useState(false)
   const [username, setUsername] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -34,7 +35,7 @@ const SignIn: React.FC = () => {
         email: username,
         password: password,
       });
-
+  
       // Successful Login:
       if (response.status === 200) {
         // Store username and password in local storage
@@ -47,6 +48,7 @@ const SignIn: React.FC = () => {
         window.location.assign("/home");
         navigate('/home');
         console.log(localStorage);
+
       } else {
         setError('Invalid username or password');
       }
@@ -58,6 +60,23 @@ const SignIn: React.FC = () => {
       }
     }
   };
+  
+  
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    setError(''); // Clear any previous error messages
+    // Validations: Email and Password
+    if (!username.trim()) {
+      setError('Please enter your email address');
+      return;
+    }
+    if (!password.trim()) {
+      setError('Please enter your password');
+      return;
+    }
+    signIn();
+  };
+
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
