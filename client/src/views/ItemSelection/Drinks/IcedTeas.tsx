@@ -20,7 +20,7 @@ const IcedTeas = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center flex gap-10">
-                            <a href="#" className="items-center">
+                            <a href="/menu/drinks/iced-teas/check" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/de6d02e888c74eac9f6ea19c5492b8e8.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Teavana® Sparkling <br /> Unsweetened...</span>
@@ -67,10 +67,11 @@ const IcedTeas = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center flex">
-                            <a href="#" className="items-center">
+                            <a href="/menu/drinks/iced-teas/check" className="items-center">
                                 <img src="https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=90/media/photosV2/ec36c25c-26da-4813-989c-9f930eef84d2-retina-large.jpg" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Chai Tea <br /> Latte</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
                     </div>
@@ -85,31 +86,37 @@ const IcedTeas = () => {
                                 <img src="https://globalassets.starbucks.com/assets/2e363c918bc74d05965eb6e635293d00.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Peach Green <br /> Tea</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/bebc2b416fb44f69a193be358ad8b3f8.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Peach Green <br /> Tea Lemonade</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/08f75b01cd3c46af9d8665c5912341e7.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Matcha Tea <br /> Latte </span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/2e363c918bc74d05965eb6e635293d00.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Green Tea</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/2e363c918bc74d05965eb6e635293d00.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Green Tea <br />Lemonade</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/08f75b01cd3c46af9d8665c5912341e7.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Matcha<br/>Lemonade </span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
                     </div>
@@ -124,11 +131,13 @@ const IcedTeas = () => {
                                 <img src="https://globalassets.starbucks.com/assets/e390f12d2da24c7b931c5b548f8c42dc.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Passion <br/> Tango Tea</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/e390f12d2da24c7b931c5b548f8c42dc.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Iced Passion <br /> Tango Tea<br/>Lemonade</span>
+                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
                     </div>

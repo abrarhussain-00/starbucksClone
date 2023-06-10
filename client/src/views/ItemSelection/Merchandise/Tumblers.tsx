@@ -17,11 +17,10 @@ const Tumblers = () => {
                     {/* Breakfast Sandwiches & Wraps */}
                     <div>
                         <div className="text-center flex">
-                            <a href="#" className="items-center">
+                            <a href="/menu/merchandise/tumblers/check" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/b3c749e064534f608fcc84076329f39d.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Siren Logo Plastic <br /> Hot Cup - 16 fl oz</span>
-                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
                     </div>

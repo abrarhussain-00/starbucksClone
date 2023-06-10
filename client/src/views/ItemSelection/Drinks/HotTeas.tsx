@@ -19,7 +19,7 @@ const HotTeas = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
-                            <a href="#" className="items-center">
+                            <a href="/menu/drinks/caramel-macchiato" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/2d52f16a22fb40ff898be1815ecc952e.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Chai Tea Latte</span>

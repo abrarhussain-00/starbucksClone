@@ -20,11 +20,10 @@ const ViaInstant = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center flex">
-                            <a href="#" className="items-center">
+                            <a href="/menu/home-coffee/via-instant" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/713f533b151b4d4d92d76eddeb06d4a2.jpg?impolicy=1by1_medium_630" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>VIA® Sweetened <br /> Iced Coffee</span>
-                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                         </div>
                     </div>

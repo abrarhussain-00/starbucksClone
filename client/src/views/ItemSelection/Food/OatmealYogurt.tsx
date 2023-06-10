@@ -20,11 +20,10 @@ const OatmealYogurt = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center flex gap-20">
-                            <a href="#" className="items-center">
+                            <a href="/menu/food/oat-meal-yogurt/check" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/D1FB41D7B2A646A6865E707D25FB9CBF.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Rolled & Steel-Cut<br/>Oatmeal</span>
-                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/bb65a9c21ce34ad5b9f99f58615b8211.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />

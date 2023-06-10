@@ -20,11 +20,10 @@ const SnacksSweets = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4 ">
-                            <a href="#" className="items-center">
+                            <a href="/menu/food/snacks-sweets/check" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/d76e82a4f5434f719083b3b2d03bf008.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Madeleines</span>
-                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/8a984f426b504c6fa6af895cd09cf8df.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />

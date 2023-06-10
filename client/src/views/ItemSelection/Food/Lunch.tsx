@@ -19,11 +19,10 @@ const Lunch = () => {
                         <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                         <br /><br />
                         <div className="text-center gap-10 grid grid-cols-4">
-                            <a href="#" className="items-center">
+                            <a href="/menu/food/lunch/check" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/02ea801e3aca434fa2fcccfcd4adba8c.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />
                                 <br />
                                 <span className='text-center'>Crispy Grilled Cheese<br/>On Sourdough</span>
-                                <div className='font-bold'>🚫 Not available</div>
                             </a>
                             <a href="#" className="items-center">
                                 <img src="https://globalassets.starbucks.com/assets/39c8d371efed45f18ba0d21f59c6229a.jpg?impolicy=1by1_tight_288" width={150} className="rounded-full mr-2" />

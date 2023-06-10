@@ -36,6 +36,21 @@ import ViaInstant from './views/ItemSelection/HomeCoffee/ViaInstant';
 import ColdCups from './views/ItemSelection/Merchandise/ColdCups';
 import Tumblers from './views/ItemSelection/Merchandise/Tumblers';
 import CaramelMach from './views/Cart/Drinks/CaramelMach';
+import ChiTeaLatte from './views/Cart/Drinks/ChiTeaLatte';
+import HotChocolate from './views/Cart/Drinks/HotChocolate';
+import ChocolateJava from './views/Cart/Drinks/ChocolateJava';
+import ColdCupsCheck from './views/Cart/Merchandise/ColdCupsCheck';
+import TumblersCheck from './views/Cart/Merchandise/TumblersCheck';
+import WholeBeanCheck from './views/Cart/HomeCoffee/WholeBeanCheck';
+import ViaInstantCheck from './views/Cart/HomeCoffee/ViaInstantCheck';
+import HotBreakFastCheck from './views/Cart/Food/HotBreakFastCheck';
+import OatMealYogurtCheck from './views/Cart/Food/OatMealYogurtCheck';
+import BakeryCheck from './views/Cart/Food/BakeryCheck';
+import LunchCheck from './views/Cart/Food/LunchCheck';
+import SnacksSweetsCheck from './views/Cart/Food/SnacksSweetsCheck';
+import ColdDrinkCheck from './views/Cart/Drinks/ColdDrinkCheck';
+import IcedDrinksCheck from './views/Cart/Drinks/IcedTeasCheck';
+import ColdCoffeesCheck from './views/Cart/Drinks/ColdCoffeesCheck';
 
 function App() {
   return (
@@ -73,6 +88,21 @@ function App() {
         <Route path='/menu/merchandise/cold-cups' element={<ColdCups/>}/>
         <Route path='/menu/merchandise/tumblers' element={<Tumblers/>}/>
         <Route path='/menu/product/0015/hot-coffees' element={<CaramelMach/>}/>
+        <Route path='/menu/drinks/caramel-macchiato' element={<ChiTeaLatte/>}/>
+        <Route path='/menu/drinks/hot-chocolate' element={<HotChocolate/>}/>
+        <Route path='/menu/drinks/chocolate-java-mint-Frappuccino' element={<ChocolateJava/>}/>
+        <Route path='/menu/merchandise/cold-cups/check' element={<ColdCupsCheck/>}/>
+        <Route path='/menu/merchandise/tumblers/check' element={<TumblersCheck/>}/>
+        <Route path='/menu/home-coffee/whole-bean' element={<WholeBeanCheck/>}/>
+        <Route path='/menu/home-coffee/via-instant' element={<ViaInstantCheck/>}/>
+        <Route path='/menu/food/hot-breakfast/check' element={<HotBreakFastCheck/>}/>
+        <Route path='/menu/food/oat-meal-yogurt/check' element={<OatMealYogurtCheck/>}/>
+        <Route path='/menu/food/bakery/check' element={<BakeryCheck/>}/>
+        <Route path='/menu/food/lunch/check' element={<LunchCheck/>}/>
+        <Route path='/menu/food/snacks-sweets/check' element={<SnacksSweetsCheck/>}/>
+        <Route path='/menu/drinks/cold-drinks/check' element={<ColdDrinkCheck/>}/>
+        <Route path='/menu/drinks/iced-teas/check' element={<IcedDrinksCheck/>} />
+        <Route path='/menu/drinks/cold-coffees/check' element={<ColdCoffeesCheck/>} />
       </Routes>
       <Footer/>
     </div>
