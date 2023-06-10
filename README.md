@@ -1,48 +1,46 @@
-# Starbucks Clone
+# Getting Started with Create React App
 
-## Created By: Abrar Hussain & Jordan Rodrigues
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Description
+## Available Scripts
 
-The Starbucks clone web application is a collaborative project that aims to recreate the functionality and user experience of the Starbucks website. It was developed using the TypeScript, React, and Node.js on the frontend and MySQL as the backend in order to ensure a robust and responsive web application.
+In the project directory, you can run:
 
-## Key Features
+### `npm start`
 
-- User login and account creation
-- Menu item selection
-- Cart management
-- Checkout functionality
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-By incorporating these features, the Starbucks clone web application provides users with a complete and engaging Starbucks-like experience.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Technologies Used
+### `npm test`
 
-- TypeScript
-- React
-- Tailwind CSS
-- MySQL
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Getting Started
+### `npm run build`
 
-To run the Starbucks clone web application locally, follow these steps:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Clone the repository to your local machine.
-2. Open the project in your preferred code editor.
-3. Install the necessary dependencies by running `npm install`.
-4. Set up the MySQL database and configure the connection details in the project.
-5. Start the development server by running `npm start`.
-6. Open your web browser and navigate to `http://localhost:3000` to view the web application.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Contributing
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-If you'd like to contribute to this project, please follow these steps:
+### `npm run eject`
 
-1. Fork this repository.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your fork.
-5. Open a pull request and describe your changes.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Feel free to explore the code and contribute to the project if you're interested!
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Demo
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
