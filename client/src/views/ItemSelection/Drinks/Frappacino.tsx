@@ -20,11 +20,10 @@ const Frappacino = () => {
                             <hr style={{ height: '1px', background: 'gray', width: '100%' }} />
                             <br /><br />
                             <div className="text-center gap-10 grid grid-cols-4 ">
-                                <a href="#" className="items-center">
+                                <a href="/menu/drinks/chocolate-java-mint-Frappuccino" className="items-center">
                                     <img src="https://globalassets.starbucks.com/assets/7FD73D3C93AF43FFA84400A42EFC9F87.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                     <br />
                                     <span className='text-center'>Chocolate Java <br /> Mint <br />Frappuccino ™ <br />Blended Beverage </span>
-                                    <div className='font-bold'>🚫 Not available</div>
                                 </a>
                                 <a href="#" className="items-center">
                                     <img src="https://globalassets.starbucks.com/assets/1fd99578d31f4072a52892398d8f1fa8.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
@@ -54,6 +53,7 @@ const Frappacino = () => {
                                     <img src="https://globalassets.starbucks.com/assets/410cd92738514641bf497d4b6a18c30f.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
                                     <br />
                                     <span className='text-center'>Caramel <br /> Frappuccino® <br /> Blended <br />Beverage </span>
+                                    <div className='font-bold'>🚫 Not available</div>
                                 </a>
                                 <a href="#" className="items-center">
                                     <img src="https://globalassets.starbucks.com/assets/72b70f11fe984732af4d8e539f53ca2d.jpg?impolicy=1by1_wide_topcrop_630" width={150} className="rounded-full mr-2" />
