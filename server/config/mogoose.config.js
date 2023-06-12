@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://abrar:rootroot@starbucksclone.gwndlj9.mongodb.net/db01', {
+mongoose.connect('mongodb+srv://abrar:dvBEXNFcliySsZMq@starbucksclone.gwndlj9.mongodb.net/db01', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
